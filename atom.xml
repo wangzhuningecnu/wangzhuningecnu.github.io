@@ -31,31 +31,32 @@
   </entry>
   
   <entry>
-    <title>Github + hexo + NexT 主题  免费搭建博客-参考链接收集</title>
+    <title>Github + Hexo + NexT 主题  免费搭建博客-参考链接收集</title>
     <link href="http://yoursite.com/2017/09/30/%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%9AGithub-hexo/"/>
     <id>http://yoursite.com/2017/09/30/免费搭建博客：Github-hexo/</id>
     <published>2017-09-30T02:38:37.000Z</published>
-    <updated>2017-09-30T03:19:41.000Z</updated>
+    <updated>2017-10-02T05:24:04.000Z</updated>
     
-    <content type="html"><![CDATA[<p>#博客搭建：</p><ul><li><a href="https://github.com/" target="_blank" rel="external">Github 官网</a>：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo 官网</a>：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a> 还要啃一下怎么部署博客</li><li><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 主题官网</a>：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 还要美化一下</li><li><a href="https://smartbeng.github.io/2017/03/26/blogFinish/" target="_blank" rel="external">最适合新手的 GitHub + Hexo 「大话」博客搭建教程</a></li><li><a href="http://windliang.cc/2017/01/23/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（三）：hexo安装配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9ANext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（四）：Next主题相关配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" target="_blank" rel="external">建立博客系列（五）：发布第一篇文章</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><ul><li><a href="https://github.com/" target="_blank" rel="external">Github 官网</a>：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">hexo 官网</a>：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a> 部署博客</li><li><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 主题官网</a>：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 美化博客</li><li><p><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT 源码地址</a>：用于失误修改next文件夹里的文件，可以参考源码还原</p></li><li><p><a href="https://smartbeng.github.io/2017/03/26/blogFinish/" target="_blank" rel="external">最适合新手的 GitHub + Hexo 「大话」博客搭建教程</a></p></li><li><a href="http://windliang.cc/2017/01/23/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（三）：hexo安装配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9ANext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（四）：Next主题相关配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" target="_blank" rel="external">建立博客系列（五）：发布第一篇文章</a></li><li><a href="http://www.jianshu.com/p/017e01718d41" target="_blank" rel="external">记录第一次搭建hexo</a></li></ul><h3 id="一些错误的解决方案"><a href="#一些错误的解决方案" class="headerlink" title="一些错误的解决方案"></a>一些错误的解决方案</h3><ul><li><a href="http://www.cnblogs.com/vinozly/p/5817255.html" target="_blank" rel="external">解决hexo神烦的 DTraceProviderBindings MODULE_NOT_FOUND</a></li><li><a href="https://yq.aliyun.com/wenji/212530?spm=5176.8246799.blogcont.19.6hlVue" target="_blank" rel="external">MAC快速显示或隐藏“隐藏”文件</a></li><li><a href="http://www.cnblogs.com/pingfan1990/p/5065360.html" target="_blank" rel="external">mac设置文件权限问题</a></li></ul><h2 id="博客主题-NexT-参考"><a href="#博客主题-NexT-参考" class="headerlink" title="博客主题 NexT 参考"></a>博客主题 NexT 参考</h2><ul><li><a href="http://wuchong.me/" target="_blank" rel="external"> Jark’s Blog</a></li><li><a href="http://windliang.cc/" target="_blank" rel="external">随风丶亮</a></li></ul><h2 id="主题-NexT-美化"><a href="#主题-NexT-美化" class="headerlink" title="主题 NexT 美化"></a>主题 NexT 美化</h2><ul><li><a href="http://fontawesome.io/icons/" target="_blank" rel="external">NexT 主题里用到的所有图标</a></li><li><a href="http://www.easyicon.net/" target="_blank" rel="external">网站 icon 下载地址</a></li><li><a href="http://www.stormxing.com/2017/09/22/3/" target="_blank" rel="external">NexT 主题配置及优化-动态背景等大全</a></li><li><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="external">hexo的next主题个性化教程:打造炫酷网站</a></li><li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/" target="_blank" rel="external">NexT 主题添加腾讯空间404公益页面</a></li></ul><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ol><li>修改文件之前先行备份，以防更改失败；</li><li>找不到的信息，结合官网查询。</li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#博客搭建：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Github 官网&lt;/a&gt;：&lt;a href=&quot;https://github.com/&quot; target=&quot;_bla
+        &lt;h2 id=&quot;博客搭建&quot;&gt;&lt;a href=&quot;#博客搭建&quot; class=&quot;headerlink&quot; title=&quot;博客搭建&quot;&gt;&lt;/a&gt;博客搭建&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;exter
       
     
     </summary>
     
     
-      <category term="test1" scheme="http://yoursite.com/tags/test1/"/>
+      <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
     
-      <category term="test2" scheme="http://yoursite.com/tags/test2/"/>
+      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
     
-      <category term="test3" scheme="http://yoursite.com/tags/test3/"/>
+      <category term="NexT" scheme="http://yoursite.com/tags/NexT/"/>
+    
+      <category term="搭建博客" scheme="http://yoursite.com/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

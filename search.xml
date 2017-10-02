@@ -6,13 +6,14 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[Github + hexo + NexT 主题 免费搭建博客-参考链接收集]]></title>
+    <title><![CDATA[Github + Hexo + NexT 主题 免费搭建博客-参考链接收集]]></title>
     <url>%2F2017%2F09%2F30%2F%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%EF%BC%9AGithub-hexo%2F</url>
-    <content type="text"><![CDATA[#博客搭建： Github 官网：https://github.com/ hexo 官网：https://hexo.io/zh-cn/ 还要啃一下怎么部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 还要美化一下 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：hexo安装配置 建立博客系列（四）：Next主题相关配置 建立博客系列（五）：发布第一篇文章]]></content>
+    <content type="text"><![CDATA[博客搭建 Github 官网：https://github.com/ hexo 官网：https://hexo.io/zh-cn/ 部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 美化博客 NexT 源码地址：用于失误修改next文件夹里的文件，可以参考源码还原 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：hexo安装配置 建立博客系列（四）：Next主题相关配置 建立博客系列（五）：发布第一篇文章 记录第一次搭建hexo 一些错误的解决方案 解决hexo神烦的 DTraceProviderBindings MODULE_NOT_FOUND MAC快速显示或隐藏“隐藏”文件 mac设置文件权限问题 博客主题 NexT 参考 Jark’s Blog 随风丶亮 主题 NexT 美化 NexT 主题里用到的所有图标 网站 icon 下载地址 NexT 主题配置及优化-动态背景等大全 hexo的next主题个性化教程:打造炫酷网站 NexT 主题添加腾讯空间404公益页面 注意 修改文件之前先行备份，以防更改失败； 找不到的信息，结合官网查询。]]></content>
       <tags>
-        <tag>test1</tag>
-        <tag>test2</tag>
-        <tag>test3</tag>
+        <tag>Github</tag>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+        <tag>搭建博客</tag>
       </tags>
   </entry>
   <entry>
