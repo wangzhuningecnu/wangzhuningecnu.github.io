@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Writing specifications]]></title>
+    <url>%2F2017%2F10%2F02%2FWriting-specifications%2F</url>
+    <content type="text"></content>
+      <tags>
+        <tag>stormzhang</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[comments]]></title>
     <url>%2F2017%2F09%2F30%2Fcomments%2F</url>
     <content type="text"></content>
@@ -8,12 +16,12 @@
   <entry>
     <title><![CDATA[GitHub + Hexo + NexT 主题 免费搭建博客-参考链接收集]]></title>
     <url>%2F2017%2F09%2F30%2FFreeBlog%EF%BC%9AGitHub-Hexo%2F</url>
-    <content type="text"><![CDATA[博客搭建 GitHub 官网：https://github.com/ Hexo 官网：https://hexo.io/zh-cn/ 部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 美化博客 NexT 源码地址：用于失误修改next文件夹里的文件，可以参考源码还原 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：Hexo 安装配置 建立博客系列（四）：NexT 主题相关配置 建立博客系列（五）：发布第一篇文章 记录第一次搭建 Hexo 一些错误的解决方案 解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND Mac 快速显示或隐藏“隐藏”文件 Mac 设置文件权限问题 博客主题 NexT 参考 Jark’s Blog 随风丶亮 主题 NexT 美化 NexT 主题里用到的所有图标 网站 icon 下载地址 NexT 主题配置及优化-动态背景等大全 Hexo 的 NexT 主题个性化教程:打造炫酷网站 NexT 主题添加腾讯空间404公益页面 注意 修改文件之前先行备份，以防更改失败； 找不到的信息，结合官网查询。]]></content>
+    <content type="text"><![CDATA[博客搭建 GitHub 官网：https://github.com/ Hexo 官网：https://hexo.io/zh-cn/ 部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 美化博客 NexT 源码地址：用于失误修改next文件夹里的文件，可以参考源码还原 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：Hexo 安装配置 建立博客系列（四）：NexT 主题相关配置 建立博客系列（五）：发布第一篇文章 记录第一次搭建 Hexo 一些错误的解决方案 解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND Mac 快速显示或隐藏“隐藏”文件 Mac 设置文件权限问题 博客主题 NexT 参考 Jark’s Blog 随风丶亮 主题 NexT 美化 NexT 主题里用到的所有图标 网站 icon 下载地址 NexT 主题配置及优化-动态背景等大全 Hexo 的 NexT 主题个性化教程:打造炫酷网站 NexT 主题添加腾讯空间404公益页面 Hexo 文章管理和写文章Hexo 使用攻略：（四）Hexo 的分类和标签设置 分类和标签有什么区别和关联? Markdown 官网 认识与入门 Markdown Markdown 语法手册 （完整整理版） Mac 下好用的 Markdown 编辑器– Mou Mac 下好用的 Markdown 编辑器—Typora Mac 下好用的图床工具 CloudApp（科学上网 + 软件收费 + 14天试用） 注意1. 修改文件之前先行备份，以防更改失败； 2. 找不到的信息，结合官网查询。]]></content>
       <tags>
+        <tag>GitHub</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
         <tag>搭建博客</tag>
-        <tag>GitHub</tag>
       </tags>
   </entry>
   <entry>
