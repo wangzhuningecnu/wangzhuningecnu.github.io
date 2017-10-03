@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Writing specifications]]></title>
     <url>%2F2017%2F10%2F02%2FWriting-specifications%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[摘自： stormzhang 的博客：每个人都需要的中文排版指南 空格 中英文之间需要加空格 eg. 大家可以搜索公众号 AndroidDeveloper 或者 googdev 关注我。 中文与数字之间需要加空格 eg. 不知不觉，我都快 30 岁了。 数字与单位之间需要加空格 eg. 我有一块 20 TB 的硬盘，鬼知道我是怎么用完的。 完整的英文整句时标点与单词之间需要加空格 eg. Stay hungry, stay foolish. 但是也有一些例外。 度的标志、百分号不加空格 eg. 今天气温有 30° 的高温。 eg. 据统计，关注公众号 AndroidDeveloper 的读者中有 80% 是长得好看的。 全角标点与其他字符之间不加空格 eg. 大家好，我是 stormzhang，请多多关照。 标点全角和半角是英文和中文的编码规范不同遗留下的问题，简单来说，全角占两个字节，半角占一个字节，你可以理解成中文汉字是全角，英文字母是半角，不过半角全角主要是针对标点符号来说的，中文标点占两个字节，英文标点占一个字节。体现在排版上的差异就是，全角字符屏幕打印宽度是两个，而半角字符屏幕打印宽度是一个，如中文逗号和英文逗号他们的显示分别是「，」和「,」。 使用全角中文标点 中文排版中所有的标点都应该使用中文全角中文标点 eg. 大家好，我是 stormzhang。 遇到英文整句、特殊名词时使用半角标点。 eg. 乔布斯说过：「Stay hungry, stay foolish.」 eg. Facebook, Inc. 使用直角引号 我国国家标准要求弯引号，但是个人建议在新媒体排版时使用直角引号。 eg. 你竟然不知道「帅比张」？ 如果引号再使用引号使用直角双引号。 eg. 我质问他，「你难道忘记『帅比张』了么？」 其他除以上之外，还有一些其他标准推荐大家使用的。 英文名词首字母尽量大写 eg. Google、Android、Facebook 专有名词使用正确的大小写 eg. GitHub、iOS、iPhone 6s、MacBook Pro 首行不要缩进 大家一般都采用「空出一行」进行自然段与自然段之间的区分，这种写作方式非常省事，而且很整齐。 ​]]></content>
       <categories>
         <category>stormzhang</category>
       </categories>
@@ -17,25 +17,26 @@
     <url>%2F2017%2F09%2F30%2FBookList%2F</url>
     <content type="text"><![CDATA[过去完成时 Head First Java： 8 - 9 月 现在进行时 Android 第一行代码：10 月 Java 算法与数据结构（慕课网）：10 月 将来时]]></content>
       <categories>
-        <category>Head First Java</category>
-        <category>Effective Java</category>
-        <category>Thinking in Java</category>
-        <category>Android 第一行代码</category>
-        <category>Head First 设计模式</category>
-        <category>CET - 6</category>
-        <category>Java 算法与数据结构（慕课网）</category>
-        <category>玩转算法面试 LeetCode 题库分门别类详细解析（慕课网）</category>
-        <category>Python</category>
+        <category>书单</category>
       </categories>
       <tags>
         <tag>书单</tag>
         <tag>任务清单</tag>
+        <tag>Head First Java</tag>
+        <tag>Effective Java</tag>
+        <tag>Thinking in Java</tag>
+        <tag>Android 第一行代码</tag>
+        <tag>Head First 设计模式</tag>
+        <tag>CET - 6</tag>
+        <tag>Java 算法与数据结构（慕课网）</tag>
+        <tag>玩转算法面试 LeetCode 题库分门别类详细解析（慕课网）</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[GitHub + Hexo + NexT 主题 免费搭建博客-参考链接收集]]></title>
     <url>%2F2017%2F09%2F30%2FFreeBlog%EF%BC%9AGitHub-Hexo%2F</url>
-    <content type="text"><![CDATA[博客搭建 GitHub 官网：https://github.com/ Hexo 官网：https://hexo.io/zh-cn/ 部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 美化博客 NexT 源码地址：用于失误修改next文件夹里的文件，可以参考源码还原 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：Hexo 安装配置 建立博客系列（四）：NexT 主题相关配置 建立博客系列（五）：发布第一篇文章 记录第一次搭建 Hexo 一些错误的解决方案 解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND Mac 快速显示或隐藏“隐藏”文件 Mac 设置文件权限问题 博客主题 NexT 参考 Jark’s Blog 随风丶亮 主题 NexT 美化 NexT 主题里用到的所有图标 网站 icon 下载地址 NexT 主题配置及优化-动态背景等大全 Hexo 的 NexT 主题个性化教程:打造炫酷网站 NexT 主题添加腾讯空间404公益页面 Hexo 文章管理和写文章 Hexo 使用攻略：（四）Hexo 的分类和标签设置 分类和标签有什么区别和关联? Markdown 官网 认识与入门 Markdown Markdown 语法手册 （完整整理版） Mac 下好用的 Markdown 编辑器– Mou Mac 下好用的 Markdown 编辑器—Typora Mac 下好用的图床工具 CloudApp（科学上网 + 软件收费 + 14天试用） Hexo-设置阅读全文 注意 修改文件之前先行备份，以防更改失败； 找不到的信息，结合官网查询。]]></content>
+    <content type="text"><![CDATA[博客搭建 GitHub 官网：https://github.com/ Hexo 官网：https://hexo.io/zh-cn/ 部署博客 NexT 主题官网：http://theme-next.iissnan.com/ 美化博客 NexT 源码地址：用于失误修改next文件夹里的文件，可以参考源码还原 最适合新手的 GitHub + Hexo 「大话」博客搭建教程 建立博客系列（三）：Hexo 安装配置 建立博客系列（四）：NexT 主题相关配置 建立博客系列（五）：发布第一篇文章 记录第一次搭建 Hexo 一些错误的解决方案 解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND Mac 快速显示或隐藏“隐藏”文件 Mac 设置文件权限问题 博客主题 NexT 参考 Jark’s Blog 随风丶亮 主题 NexT 美化 NexT 主题里用到的所有图标 网站 icon 下载地址 NexT 主题配置及优化-动态背景等大全 Hexo 的 NexT 主题个性化教程:打造炫酷网站 NexT 主题添加腾讯空间404公益页面 Hexo 文章管理和写文章 Hexo 使用攻略：（四）Hexo 的分类和标签设置 分类和标签有什么区别和关联? Front - matter | Hexo 官网关于文章分类的解释 Markdown 官网 认识与入门 Markdown Markdown 语法手册 （完整整理版） Mac 下好用的 Markdown 编辑器– Mou Mac 下好用的 Markdown 编辑器—Typora Mac 下好用的图床工具 CloudApp（科学上网 + 软件收费 + 14天试用） 如何利用 GitHub 在 Markdown 中优雅地插入图片 Hexo-设置阅读全文 注意 修改文件之前先行备份，以防更改失败； 找不到的信息，结合官网查询。]]></content>
       <categories>
         <category>Hexo</category>
       </categories>

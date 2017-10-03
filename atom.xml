@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-03T06:36:13.000Z</updated>
+  <updated>2017-10-03T15:14:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,19 @@
     <link href="http://yoursite.com/2017/10/02/Writing-specifications/"/>
     <id>http://yoursite.com/2017/10/02/Writing-specifications/</id>
     <published>2017-10-02T08:52:45.000Z</published>
-    <updated>2017-10-03T06:36:13.000Z</updated>
+    <updated>2017-10-03T15:14:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>摘自：</p><blockquote><p>stormzhang 的博客：<a href="http://stormzhang.com/2017/03/16/chinese-copywriting/" target="_blank" rel="external">每个人都需要的中文排版指南</a></p></blockquote><h2 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h2><ul><li><p>中英文之间需要加空格</p><p>eg. 大家可以搜索公众号 AndroidDeveloper 或者 googdev 关注我。</p><a id="more"></a></li></ul><ul><li><p>中文与数字之间需要加空格</p><p>eg. 不知不觉，我都快 30 岁了。</p></li></ul><ul><li><p>数字与单位之间需要加空格</p><p>eg. 我有一块 20 TB 的硬盘，鬼知道我是怎么用完的。</p></li></ul><ul><li><p>完整的英文整句时标点与单词之间需要加空格</p><p>eg. Stay hungry, stay foolish.</p><p>但是也有一些例外。</p></li><li><p>度的标志、百分号不加空格</p><p>eg. 今天气温有 30° 的高温。 eg. 据统计，关注公众号 AndroidDeveloper 的读者中有 80% 是长得好看的。</p></li><li><p>全角标点与其他字符之间不加空格</p><p>eg. 大家好，我是 stormzhang，请多多关照。</p></li></ul><h2 id="标点"><a href="#标点" class="headerlink" title="标点"></a>标点</h2><p>全角和半角是英文和中文的编码规范不同遗留下的问题，简单来说，全角占两个字节，半角占一个字节，你可以理解成中文汉字是全角，英文字母是半角，不过半角全角主要是针对标点符号来说的，中文标点占两个字节，英文标点占一个字节。体现在排版上的差异就是，全角字符屏幕打印宽度是两个，而半角字符屏幕打印宽度是一个，如中文逗号和英文逗号他们的显示分别是「，」和「,」。</p><ul><li><p>使用全角中文标点</p><p>中文排版中所有的标点都应该使用中文全角中文标点</p><p>eg. 大家好，我是 stormzhang。</p></li></ul><ul><li><p>遇到英文整句、特殊名词时使用半角标点。</p><p>eg. 乔布斯说过：「Stay hungry, stay foolish.」 eg. Facebook, Inc.</p></li></ul><ul><li><p>使用直角引号</p><p>我国国家标准要求弯引号，但是个人建议在新媒体排版时使用直角引号。</p><p>eg. 你竟然不知道「帅比张」？</p><p>如果引号再使用引号使用直角双引号。</p><p>eg. 我质问他，「你难道忘记『帅比张』了么？」</p></li></ul><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>除以上之外，还有一些其他标准推荐大家使用的。</p><ul><li><p>英文名词首字母尽量大写</p><p>eg. Google、Android、Facebook</p></li></ul><ul><li><p>专有名词使用正确的大小写</p><p>eg. GitHub、iOS、iPhone 6s、MacBook Pro</p></li></ul><ul><li><p>首行不要缩进</p><p>大家一般都采用「空出一行」进行自然段与自然段之间的区分，这种写作方式非常省事，而且很整齐。</p><p>​</p></li></ul>]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;摘自：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;stormzhang 的博客：&lt;a href=&quot;http://stormzhang.com/2017/03/16/chinese-copywriting/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;每个人都需要的中文排版指南&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;空格&quot;&gt;&lt;a href=&quot;#空格&quot; class=&quot;headerlink&quot; title=&quot;空格&quot;&gt;&lt;/a&gt;空格&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;中英文之间需要加空格&lt;/p&gt;
+&lt;p&gt;eg. 大家可以搜索公众号 AndroidDeveloper 或者 googdev 关注我。&lt;/p&gt;
     
     </summary>
     
@@ -41,7 +51,7 @@
     <link href="http://yoursite.com/2017/09/30/BookList/"/>
     <id>http://yoursite.com/2017/09/30/BookList/</id>
     <published>2017-09-30T04:02:48.000Z</published>
-    <updated>2017-10-03T06:36:07.000Z</updated>
+    <updated>2017-10-03T07:02:16.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="过去完成时"><a href="#过去完成时" class="headerlink" title="过去完成时"></a>过去完成时</h2><ul><li>Head First Java： 8 - 9 月</li></ul><a id="more"></a><h2 id="现在进行时"><a href="#现在进行时" class="headerlink" title="现在进行时"></a>现在进行时</h2><ul><li>Android 第一行代码：10 月</li><li>Java 算法与数据结构（慕课网）：10 月</li></ul><h2 id="将来时"><a href="#将来时" class="headerlink" title="将来时"></a>将来时</h2>]]></content>
     
@@ -53,28 +63,30 @@
     
     </summary>
     
-      <category term="Head First Java" scheme="http://yoursite.com/categories/Head-First-Java/"/>
-    
-      <category term="Effective Java" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/"/>
-    
-      <category term="Thinking in Java" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/"/>
-    
-      <category term="Android 第一行代码" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/"/>
-    
-      <category term="Head First 设计模式" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-      <category term="CET - 6" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/CET-6/"/>
-    
-      <category term="Java 算法与数据结构（慕课网）" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/CET-6/Java-%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/"/>
-    
-      <category term="玩转算法面试 LeetCode 题库分门别类详细解析（慕课网）" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/CET-6/Java-%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/%E7%8E%A9%E8%BD%AC%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95-LeetCode-%E9%A2%98%E5%BA%93%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB%E8%AF%A6%E7%BB%86%E8%A7%A3%E6%9E%90%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/"/>
-    
-      <category term="Python" scheme="http://yoursite.com/categories/Head-First-Java/Effective-Java/Thinking-in-Java/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/CET-6/Java-%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/%E7%8E%A9%E8%BD%AC%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95-LeetCode-%E9%A2%98%E5%BA%93%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB%E8%AF%A6%E7%BB%86%E8%A7%A3%E6%9E%90%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/Python/"/>
+      <category term="书单" scheme="http://yoursite.com/categories/%E4%B9%A6%E5%8D%95/"/>
     
     
       <category term="书单" scheme="http://yoursite.com/tags/%E4%B9%A6%E5%8D%95/"/>
     
       <category term="任务清单" scheme="http://yoursite.com/tags/%E4%BB%BB%E5%8A%A1%E6%B8%85%E5%8D%95/"/>
+    
+      <category term="Head First Java" scheme="http://yoursite.com/tags/Head-First-Java/"/>
+    
+      <category term="Effective Java" scheme="http://yoursite.com/tags/Effective-Java/"/>
+    
+      <category term="Thinking in Java" scheme="http://yoursite.com/tags/Thinking-in-Java/"/>
+    
+      <category term="Android 第一行代码" scheme="http://yoursite.com/tags/Android-%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81/"/>
+    
+      <category term="Head First 设计模式" scheme="http://yoursite.com/tags/Head-First-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="CET - 6" scheme="http://yoursite.com/tags/CET-6/"/>
+    
+      <category term="Java 算法与数据结构（慕课网）" scheme="http://yoursite.com/tags/Java-%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/"/>
+    
+      <category term="玩转算法面试 LeetCode 题库分门别类详细解析（慕课网）" scheme="http://yoursite.com/tags/%E7%8E%A9%E8%BD%AC%E7%AE%97%E6%B3%95%E9%9D%A2%E8%AF%95-LeetCode-%E9%A2%98%E5%BA%93%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB%E8%AF%A6%E7%BB%86%E8%A7%A3%E6%9E%90%EF%BC%88%E6%85%95%E8%AF%BE%E7%BD%91%EF%BC%89/"/>
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
@@ -83,9 +95,9 @@
     <link href="http://yoursite.com/2017/09/30/FreeBlog%EF%BC%9AGitHub-Hexo/"/>
     <id>http://yoursite.com/2017/09/30/FreeBlog：GitHub-Hexo/</id>
     <published>2017-09-30T02:38:37.000Z</published>
-    <updated>2017-10-03T06:36:09.000Z</updated>
+    <updated>2017-10-03T15:18:29.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><ul><li><a href="https://github.com/" target="_blank" rel="external">GitHub 官网</a>：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo 官网</a>：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a> 部署博客</li><li><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 主题官网</a>：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 美化博客</li><li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT 源码地址</a>：用于失误修改next文件夹里的文件，可以参考源码还原</li><li><a href="https://smartbeng.github.io/2017/03/26/blogFinish/" target="_blank" rel="external">最适合新手的 GitHub + Hexo 「大话」博客搭建教程</a></li></ul><a id="more"></a><ul><li><a href="http://windliang.cc/2017/01/23/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（三）：Hexo 安装配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9ANext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（四）：NexT 主题相关配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" target="_blank" rel="external">建立博客系列（五）：发布第一篇文章</a></li><li><a href="http://www.jianshu.com/p/017e01718d41" target="_blank" rel="external">记录第一次搭建 Hexo</a></li></ul><h3 id="一些错误的解决方案"><a href="#一些错误的解决方案" class="headerlink" title="一些错误的解决方案"></a>一些错误的解决方案</h3><ul><li><a href="http://www.cnblogs.com/vinozly/p/5817255.html" target="_blank" rel="external">解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND</a></li><li><a href="https://yq.aliyun.com/wenji/212530?spm=5176.8246799.blogcont.19.6hlVue" target="_blank" rel="external">Mac 快速显示或隐藏“隐藏”文件</a></li><li><a href="http://www.cnblogs.com/pingfan1990/p/5065360.html" target="_blank" rel="external">Mac 设置文件权限问题</a></li></ul><h2 id="博客主题-NexT-参考"><a href="#博客主题-NexT-参考" class="headerlink" title="博客主题 NexT 参考"></a>博客主题 NexT 参考</h2><ul><li><a href="http://wuchong.me/" target="_blank" rel="external"> Jark’s Blog</a></li><li><a href="http://windliang.cc/" target="_blank" rel="external">随风丶亮</a></li></ul><h2 id="主题-NexT-美化"><a href="#主题-NexT-美化" class="headerlink" title="主题 NexT 美化"></a>主题 NexT 美化</h2><ul><li><a href="http://fontawesome.io/icons/" target="_blank" rel="external">NexT 主题里用到的所有图标</a></li><li><a href="http://www.easyicon.net/" target="_blank" rel="external">网站 icon 下载地址</a></li><li><a href="http://www.stormxing.com/2017/09/22/3/" target="_blank" rel="external">NexT 主题配置及优化-动态背景等大全</a></li><li><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="external">Hexo 的 NexT 主题个性化教程:打造炫酷网站</a></li><li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/" target="_blank" rel="external">NexT 主题添加腾讯空间404公益页面</a></li></ul><h2 id="Hexo-文章管理和写文章"><a href="#Hexo-文章管理和写文章" class="headerlink" title="Hexo 文章管理和写文章"></a>Hexo 文章管理和写文章</h2><ul><li><a href="http://ijiaober.github.io/2014/08/05/hexo/hexo-04/" target="_blank" rel="external">Hexo 使用攻略：（四）Hexo 的分类和标签设置</a></li><li><a href="https://www.zhihu.com/question/19566478?sort=created" target="_blank" rel="external">分类和标签有什么区别和关联?</a></li><li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 官网</a></li><li><a href="https://sspai.com/post/25137" target="_blank" rel="external">认识与入门 Markdown</a></li><li><a href="http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C" target="_blank" rel="external">Markdown 语法手册 （完整整理版）</a></li><li><a href="http://25.io/mou/" target="_blank" rel="external">Mac 下好用的 Markdown 编辑器– Mou</a></li><li><a href="https://typora.io/" target="_blank" rel="external">Mac 下好用的 Markdown 编辑器—Typora</a></li><li><a href="https://www.getcloudapp.com/" target="_blank" rel="external">Mac 下好用的图床工具 CloudApp（科学上网 + 软件收费 + 14天试用）</a></li><li><a href="http://www.jianshu.com/p/78c218f9d1e7" target="_blank" rel="external">Hexo-设置阅读全文</a></li></ul><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ol><li>修改文件之前先行备份，以防更改失败；</li><li>找不到的信息，结合官网查询。</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h2><ul><li><a href="https://github.com/" target="_blank" rel="external">GitHub 官网</a>：<a href="https://github.com/" target="_blank" rel="external">https://github.com/</a></li><li><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo 官网</a>：<a href="https://hexo.io/zh-cn/" target="_blank" rel="external">https://hexo.io/zh-cn/</a> 部署博客</li><li><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT 主题官网</a>：<a href="http://theme-next.iissnan.com/" target="_blank" rel="external">http://theme-next.iissnan.com/</a> 美化博客</li><li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">NexT 源码地址</a>：用于失误修改next文件夹里的文件，可以参考源码还原</li><li><a href="https://smartbeng.github.io/2017/03/26/blogFinish/" target="_blank" rel="external">最适合新手的 GitHub + Hexo 「大话」博客搭建教程</a></li></ul><a id="more"></a><ul><li><a href="http://windliang.cc/2017/01/23/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%B8%89%EF%BC%89%EF%BC%9Ahexo%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（三）：Hexo 安装配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E5%9B%9B%EF%BC%89%EF%BC%9ANext%E4%B8%BB%E9%A2%98%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/" target="_blank" rel="external">建立博客系列（四）：NexT 主题相关配置</a></li><li><a href="http://windliang.cc/2017/01/28/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%EF%BC%88%E4%BA%94%EF%BC%89%EF%BC%9A%E5%8F%91%E5%B8%83%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" target="_blank" rel="external">建立博客系列（五）：发布第一篇文章</a></li><li><a href="http://www.jianshu.com/p/017e01718d41" target="_blank" rel="external">记录第一次搭建 Hexo</a></li></ul><h3 id="一些错误的解决方案"><a href="#一些错误的解决方案" class="headerlink" title="一些错误的解决方案"></a>一些错误的解决方案</h3><ul><li><a href="http://www.cnblogs.com/vinozly/p/5817255.html" target="_blank" rel="external">解决 Hexo 神烦的 DTraceProviderBindings MODULE_NOT_FOUND</a></li><li><a href="https://yq.aliyun.com/wenji/212530?spm=5176.8246799.blogcont.19.6hlVue" target="_blank" rel="external">Mac 快速显示或隐藏“隐藏”文件</a></li><li><a href="http://www.cnblogs.com/pingfan1990/p/5065360.html" target="_blank" rel="external">Mac 设置文件权限问题</a></li></ul><h2 id="博客主题-NexT-参考"><a href="#博客主题-NexT-参考" class="headerlink" title="博客主题 NexT 参考"></a>博客主题 NexT 参考</h2><ul><li><a href="http://wuchong.me/" target="_blank" rel="external"> Jark’s Blog</a></li><li><a href="http://windliang.cc/" target="_blank" rel="external">随风丶亮</a></li></ul><h2 id="主题-NexT-美化"><a href="#主题-NexT-美化" class="headerlink" title="主题 NexT 美化"></a>主题 NexT 美化</h2><ul><li><a href="http://fontawesome.io/icons/" target="_blank" rel="external">NexT 主题里用到的所有图标</a></li><li><a href="http://www.easyicon.net/" target="_blank" rel="external">网站 icon 下载地址</a></li><li><a href="http://www.stormxing.com/2017/09/22/3/" target="_blank" rel="external">NexT 主题配置及优化-动态背景等大全</a></li><li><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="external">Hexo 的 NexT 主题个性化教程:打造炫酷网站</a></li><li><a href="http://www.arao.me/2015/hexo-next-theme-optimize-base/" target="_blank" rel="external">NexT 主题添加腾讯空间404公益页面</a></li></ul><h2 id="Hexo-文章管理和写文章"><a href="#Hexo-文章管理和写文章" class="headerlink" title="Hexo 文章管理和写文章"></a>Hexo 文章管理和写文章</h2><ul><li><a href="http://ijiaober.github.io/2014/08/05/hexo/hexo-04/" target="_blank" rel="external">Hexo 使用攻略：（四）Hexo 的分类和标签设置</a></li><li><a href="https://www.zhihu.com/question/19566478?sort=created" target="_blank" rel="external">分类和标签有什么区别和关联?</a></li><li><a href="https://hexo.io/zh-cn/docs/front-matter.html" target="_blank" rel="external">Front - matter | Hexo 官网关于文章分类的解释</a></li><li><a href="http://www.appinn.com/markdown/" target="_blank" rel="external">Markdown 官网</a></li><li><a href="https://sspai.com/post/25137" target="_blank" rel="external">认识与入门 Markdown</a></li><li><a href="http://blog.leanote.com/post/freewalk/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C" target="_blank" rel="external">Markdown 语法手册 （完整整理版）</a></li><li><a href="http://25.io/mou/" target="_blank" rel="external">Mac 下好用的 Markdown 编辑器– Mou</a></li><li><a href="https://typora.io/" target="_blank" rel="external">Mac 下好用的 Markdown 编辑器—Typora</a></li><li><a href="https://www.getcloudapp.com/" target="_blank" rel="external">Mac 下好用的图床工具 CloudApp（科学上网 + 软件收费 + 14天试用）</a></li><li><a href="http://blog.csdn.net/monkey_lzl/article/details/57480599" target="_blank" rel="external">如何利用 GitHub 在 Markdown 中优雅地插入图片</a></li><li><a href="http://www.jianshu.com/p/78c218f9d1e7" target="_blank" rel="external">Hexo-设置阅读全文</a></li></ul><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><ol><li>修改文件之前先行备份，以防更改失败；</li><li>找不到的信息，结合官网查询。</li></ol>]]></content>
     
     <summary type="html">
     
