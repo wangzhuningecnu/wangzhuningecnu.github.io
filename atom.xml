@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-03T22:39:33.000Z</updated>
+  <updated>2017-10-04T01:01:26.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TaskList：SAIC MAXUS</title>
+    <link href="http://yoursite.com/2017/10/04/TaskList%EF%BC%9ASAIC-MAXUS/"/>
+    <id>http://yoursite.com/2017/10/04/TaskList：SAIC-MAXUS/</id>
+    <published>2017-10-04T00:50:50.000Z</published>
+    <updated>2017-10-04T01:01:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数据库实现"><a href="#数据库实现" class="headerlink" title="数据库实现"></a>数据库实现</h2><h2 id="手机验证码"><a href="#手机验证码" class="headerlink" title="手机验证码"></a>手机验证码</h2><a id="more"></a><h2 id="滚动广告"><a href="#滚动广告" class="headerlink" title="滚动广告"></a>滚动广告</h2><h2 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h2><h2 id="智能推荐"><a href="#智能推荐" class="headerlink" title="智能推荐"></a>智能推荐</h2><h2 id="购买支付"><a href="#购买支付" class="headerlink" title="购买支付"></a>购买支付</h2><h2 id="语音"><a href="#语音" class="headerlink" title="语音"></a>语音</h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;数据库实现&quot;&gt;&lt;a href=&quot;#数据库实现&quot; class=&quot;headerlink&quot; title=&quot;数据库实现&quot;&gt;&lt;/a&gt;数据库实现&lt;/h2&gt;&lt;h2 id=&quot;手机验证码&quot;&gt;&lt;a href=&quot;#手机验证码&quot; class=&quot;headerlink&quot; title=&quot;手机验证码&quot;&gt;&lt;/a&gt;手机验证码&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="上汽大通" scheme="http://yoursite.com/categories/%E4%B8%8A%E6%B1%BD%E5%A4%A7%E9%80%9A/"/>
+    
+    
+      <category term="任务清单" scheme="http://yoursite.com/tags/%E4%BB%BB%E5%8A%A1%E6%B8%85%E5%8D%95/"/>
+    
+      <category term="上汽大通" scheme="http://yoursite.com/tags/%E4%B8%8A%E6%B1%BD%E5%A4%A7%E9%80%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>Writing specifications</title>
