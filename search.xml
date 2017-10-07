@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[sortAlgorithm]]></title>
+    <url>%2F2017%2F10%2F07%2FsortAlgorithm%2F</url>
+    <content type="text"><![CDATA[最简单的 — 选择排序 选择排序：每次选择剩余元素中的最小的那个，与当前位置互换。 选择排序不能中断 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748public class SelectionSort &#123; private SelectionSort()&#123;&#125;//此算法类不允许产生实例 public static void selectionSort(int[] arr) &#123; for (int i = 0; i &lt; arr.length; i++) &#123; //找到剩余元素（下标为 [i，arr.length)中的元素）中最小元素的下标 int min = i; for (int j = i + 1; j &lt; arr.length; j++) &#123; if (arr[j] &lt; arr[min]) &#123; min = j; &#125; &#125; swap(arr, min, i);//将选择出的最小元素与当前位置元素 arr[i] 交换 for (int n : arr) &#123; System.out.print(n +" "); &#125; System.out.println(); &#125; &#125; public static void swap(int arr[],int n,int m) &#123; int temp = arr[n]; arr[n] = arr[m]; arr[m] = temp; &#125; public static void main(String[] args) &#123; int arr[] = &#123;10,8,9,7,4,6,5,3,2,1&#125;; SelectionSort.selectionSort(arr); for (int i : arr) &#123; System.out.print(i + " "); &#125; System.out.println(); &#125;&#125;输出：1 8 9 7 4 6 5 3 2 10 1 2 9 7 4 6 5 3 8 10 1 2 3 7 4 6 5 9 8 10 1 2 3 4 7 6 5 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10]]></content>
+      <categories>
+        <category>排序算法</category>
+      </categories>
+      <tags>
+        <tag>Java 算法与数据结构（慕课网）</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[TaskList：SAIC MAXUS]]></title>
     <url>%2F2017%2F10%2F04%2FTaskList%EF%BC%9ASAIC-MAXUS%2F</url>
     <content type="text"><![CDATA[数据库实现手机验证码 滚动广告搜索智能推荐购买支付语音]]></content>
