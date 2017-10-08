@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Java Primary Question]]></title>
+    <url>%2F2017%2F10%2F08%2FJava-Primary-Question%2F</url>
+    <content type="text"><![CDATA[引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明： 123Student[] arrStudent = new Student[]&#123;&#123;"D",90&#125; , &#123;"C",100&#125; , &#123;"B",95&#125; , &#123;"A",95&#125;&#125;;Student[] arrStudent = new Student[]()&#123;&#123;"D",90&#125; , &#123;"C",100&#125; , &#123;"B",95&#125; , &#123;"A",95&#125;&#125;; Integer 的包装类就可以这样声明： 1234567891011121314151617181920212223//测试 IntegerInteger arrInteger[] = &#123;10,8,9,7,4,6,5,3,2,1&#125;;SelectionSort.selectionSort(arrInteger);for (Integer i : arrInteger )&#123; System.out.print(i + " ");&#125;System.out.println();//测试 DoubleDouble arrDouble[] = &#123;4.3,4.2,3.3,2.1,1.0&#125;;SelectionSort.selectionSort(arrDouble);for (Double double1 : arrDouble) &#123; System.out.print(double1 + " ");&#125;System.out.println();//测试 StringString[] arrString = &#123;"D","C","B","A"&#125;;SelectionSort.selectionSort(arrString);for (String string : arrString) &#123; System.out.print(string+" ");&#125;System.out.println(); 引用类型的数组不可以在赋值时声明吗？]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java问题贴</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[sortAlgorithm]]></title>
     <url>%2F2017%2F10%2F07%2FsortAlgorithm%2F</url>
     <content type="text"><![CDATA[最简单的 — 选择排序 选择排序：每次选择剩余元素中的最小的那个，与当前位置互换。 选择排序不能中断 选择排序动态图 选择排序示例代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748public class SelectionSort &#123; private SelectionSort()&#123;&#125;//此算法类不允许产生实例 public static void selectionSort(int[] arr) &#123; for (int i = 0; i &lt; arr.length; i++) &#123; //找到剩余元素（下标为 [i，arr.length)中的元素）中最小元素的下标 int min = i; for (int j = i + 1; j &lt; arr.length; j++) &#123; if (arr[j] &lt; arr[min]) &#123; min = j; &#125; &#125; swap(arr, min, i);//将选择出的最小元素与当前位置元素 arr[i] 交换 for (int n : arr) &#123; System.out.print(n +" "); &#125; System.out.println(); &#125; &#125; public static void swap(int arr[],int n,int m) &#123; int temp = arr[n]; arr[n] = arr[m]; arr[m] = temp; &#125; public static void main(String[] args) &#123; int arr[] = &#123;10,8,9,7,4,6,5,3,2,1&#125;; SelectionSort.selectionSort(arr); for (int i : arr) &#123; System.out.print(i + " "); &#125; System.out.println(); &#125;&#125;输出：1 8 9 7 4 6 5 3 2 10 1 2 9 7 4 6 5 3 8 10 1 2 3 7 4 6 5 9 8 10 1 2 3 4 7 6 5 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 9 8 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10]]></content>
