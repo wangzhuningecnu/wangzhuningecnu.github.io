@@ -85,7 +85,7 @@
 <meta property="og:site_name" content="年轻人不要老熬夜">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://images.unsplash.com/photo-1502083728181-687546e77613?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
-<meta property="og:updated_time" content="2017-10-09T06:06:55.000Z">
+<meta property="og:updated_time" content="2017-10-09T08:56:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java Primary Question">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1502083728181-687546e77613?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
@@ -393,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  175
+                  337
                 </span>
               
 
@@ -438,6 +438,12 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//测试 Integer</span></div><div class="line">Integer arrInteger[] = &#123;<span class="number">10</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">7</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrInteger);</div><div class="line"><span class="keyword">for</span> (Integer i : arrInteger )&#123;</div><div class="line">	System.out.print(i + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 Double</span></div><div class="line">Double arrDouble[] = &#123;<span class="number">4.3</span>,<span class="number">4.2</span>,<span class="number">3.3</span>,<span class="number">2.1</span>,<span class="number">1.0</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrDouble);</div><div class="line"><span class="keyword">for</span> (Double double1 : arrDouble) &#123;</div><div class="line">	System.out.print(double1 + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 String</span></div><div class="line">String[] arrString = &#123;<span class="string">"D"</span>,<span class="string">"C"</span>,<span class="string">"B"</span>,<span class="string">"A"</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrString);</div><div class="line"><span class="keyword">for</span> (String string : arrString) &#123;</div><div class="line">	System.out.print(string+<span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div></pre></td></tr></table></figure>
 <p>引用类型的数组不可以在声明时赋值吗？</p>
 <p>引用类型数组怎么定义的？</p>
+<h2 id="assert-是保证什么的东东，不是类，也不是静态方法，那应该是Object里的-但是没有"><a href="#assert-是保证什么的东东，不是类，也不是静态方法，那应该是Object里的-但是没有" class="headerlink" title="assert 是保证什么的东东，不是类，也不是静态方法，那应该是Object里的,但是没有"></a>assert 是保证什么的东东，不是类，也不是静态方法，那应该是Object里的,但是没有</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">assert</span> randomLeft &lt;= randomRight;</div></pre></td></tr></table></figure>
+<p>这句能保证的是，randomLeft 的值 如果大于 randomRight 的值，则会把他们两个调换。不会报 true 或 false ，也不会报错，程序还是能运行。</p>
+<h2 id="泛型泛型啊"><a href="#泛型泛型啊" class="headerlink" title="泛型泛型啊"></a>泛型泛型啊</h2><h2 id="Foreach-用法注意"><a href="#Foreach-用法注意" class="headerlink" title="Foreach 用法注意"></a>Foreach 用法注意</h2><p>若是给数组赋值，则不能用 Foreach ，因为 foreach 只是把值拷贝给一个临时变量，并不会赋值给数组本身。</p>
+<p>错误示例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> (Integer integer : arr) &#123;</div><div class="line">			integer = <span class="keyword">new</span> Integer((<span class="keyword">int</span>)(Math.random()*(randomRight-randomLeft+<span class="number">1</span>)+randomLeft));</div><div class="line">		&#125;</div></pre></td></tr></table></figure>
+<p>确实生成了随机数给 integer,但并没有给数组。</p>
 
       
     </div>
@@ -675,7 +681,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用数组的赋值问题"><span class="nav-number">1.</span> <span class="nav-text">引用数组的赋值问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用数组的赋值问题"><span class="nav-number">1.</span> <span class="nav-text">引用数组的赋值问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#assert-是保证什么的东东，不是类，也不是静态方法，那应该是Object里的-但是没有"><span class="nav-number">2.</span> <span class="nav-text">assert 是保证什么的东东，不是类，也不是静态方法，那应该是Object里的,但是没有</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#泛型泛型啊"><span class="nav-number">3.</span> <span class="nav-text">泛型泛型啊</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Foreach-用法注意"><span class="nav-number">4.</span> <span class="nav-text">Foreach 用法注意</span></a></li></ol></div>
             
 
           </div>
@@ -709,7 +715,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">2.7k字</span>
+    <span title="博客全站共">2.9k字</span>
   
 </div>
 
