@@ -78,18 +78,17 @@
 
 
 
-<meta name="description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
 <meta name="keywords" content="Java问题贴">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Primary Question">
 <meta property="og:url" content="http://yoursite.com/2017/10/08/Java-Primary-Question/index.html">
 <meta property="og:site_name" content="年轻人不要老熬夜">
-<meta property="og:description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-08T11:24:48.000Z">
+<meta property="og:image" content="https://images.unsplash.com/photo-1502083728181-687546e77613?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
+<meta property="og:updated_time" content="2017-10-09T06:06:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java Primary Question">
-<meta name="twitter:description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1502083728181-687546e77613?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
 
 
 
@@ -431,8 +430,9 @@
       
 
       
-        <h2 id="引用数组的赋值问题"><a href="#引用数组的赋值问题" class="headerlink" title="引用数组的赋值问题"></a>引用数组的赋值问题</h2><p>元素对象为 Student 类，数组元素对象为什么不能这样声明：</p>
+        <p><img src="https://images.unsplash.com/photo-1502083728181-687546e77613?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=1350&amp;h=&amp;q=80&amp;cs=tinysrgb&amp;crop=" alt="nature"></p>
 <a id="more"></a>
+<h2 id="引用数组的赋值问题"><a href="#引用数组的赋值问题" class="headerlink" title="引用数组的赋值问题"></a>引用数组的赋值问题</h2><p>元素对象为 Student 类，数组元素对象为什么不能这样声明：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Student[] arrStudent = <span class="keyword">new</span> Student[]&#123;&#123;<span class="string">"D"</span>,<span class="number">90</span>&#125; , &#123;<span class="string">"C"</span>,<span class="number">100</span>&#125; , &#123;<span class="string">"B"</span>,<span class="number">95</span>&#125; , &#123;<span class="string">"A"</span>,<span class="number">95</span>&#125;&#125;;</div><div class="line"></div><div class="line">Student[] arrStudent = <span class="keyword">new</span> Student[]()&#123;&#123;<span class="string">"D"</span>,<span class="number">90</span>&#125; , &#123;<span class="string">"C"</span>,<span class="number">100</span>&#125; , &#123;<span class="string">"B"</span>,<span class="number">95</span>&#125; , &#123;<span class="string">"A"</span>,<span class="number">95</span>&#125;&#125;;</div></pre></td></tr></table></figure>
 <p>Integer 的包装类就可以这样声明：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//测试 Integer</span></div><div class="line">Integer arrInteger[] = &#123;<span class="number">10</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">7</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrInteger);</div><div class="line"><span class="keyword">for</span> (Integer i : arrInteger )&#123;</div><div class="line">	System.out.print(i + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 Double</span></div><div class="line">Double arrDouble[] = &#123;<span class="number">4.3</span>,<span class="number">4.2</span>,<span class="number">3.3</span>,<span class="number">2.1</span>,<span class="number">1.0</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrDouble);</div><div class="line"><span class="keyword">for</span> (Double double1 : arrDouble) &#123;</div><div class="line">	System.out.print(double1 + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 String</span></div><div class="line">String[] arrString = &#123;<span class="string">"D"</span>,<span class="string">"C"</span>,<span class="string">"B"</span>,<span class="string">"A"</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrString);</div><div class="line"><span class="keyword">for</span> (String string : arrString) &#123;</div><div class="line">	System.out.print(string+<span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div></pre></td></tr></table></figure>
