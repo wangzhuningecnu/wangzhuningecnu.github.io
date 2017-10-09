@@ -62,7 +62,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Java问题贴," />
+  <meta name="keywords" content="任务清单,Java," />
 
 
 
@@ -78,18 +78,17 @@
 
 
 
-<meta name="description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
-<meta name="keywords" content="Java问题贴">
+<meta name="keywords" content="任务清单,Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java Primary Question">
-<meta property="og:url" content="http://yoursite.com/2017/10/08/Java-Primary-Question/index.html">
+<meta property="og:title" content="Effective Java">
+<meta property="og:url" content="http://yoursite.com/2017/10/09/Effective-Java/index.html">
 <meta property="og:site_name" content="年轻人不要老熬夜">
-<meta property="og:description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-08T11:24:48.000Z">
+<meta property="og:image" content="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
+<meta property="og:updated_time" content="2017-10-09T03:51:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java Primary Question">
-<meta name="twitter:description" content="引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明：">
+<meta name="twitter:title" content="Effective Java">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=">
 
 
 
@@ -119,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/10/08/Java-Primary-Question/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/09/Effective-Java/"/>
 
 
 
 
 
-  <title>Java Primary Question | 年轻人不要老熬夜</title>
+  <title>Effective Java | 年轻人不要老熬夜</title>
   
 
 
@@ -306,7 +305,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/08/Java-Primary-Question/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/09/Effective-Java/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wangzhuning">
@@ -323,7 +322,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java Primary Question</h1>
+          <h1 class="post-title" itemprop="name headline">Effective Java</h1>
         
 
         <div class="post-meta">
@@ -335,8 +334,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-08T11:50:07+08:00">
-                2017-10-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-09T10:42:58+08:00">
+                2017-10-09
               </time>
             
 
@@ -360,6 +359,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index">
                     <span itemprop="name">Java</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Effective-Java/" itemprop="url" rel="index">
+                    <span itemprop="name">Effective Java</span>
                   </a>
                 </span>
 
@@ -394,7 +404,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  175
+                  169
                 </span>
               
 
@@ -431,13 +441,16 @@
       
 
       
-        <h2 id="引用数组的赋值问题"><a href="#引用数组的赋值问题" class="headerlink" title="引用数组的赋值问题"></a>引用数组的赋值问题</h2><p>元素对象为 Student 类，数组元素对象为什么不能这样声明：</p>
+        <p><img src="https://images.unsplash.com/photo-1437422061949-f6efbde0a471?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=1350&amp;h=&amp;q=80&amp;cs=tinysrgb&amp;crop=" alt="Nature"></p>
 <a id="more"></a>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Student[] arrStudent = <span class="keyword">new</span> Student[]&#123;&#123;<span class="string">"D"</span>,<span class="number">90</span>&#125; , &#123;<span class="string">"C"</span>,<span class="number">100</span>&#125; , &#123;<span class="string">"B"</span>,<span class="number">95</span>&#125; , &#123;<span class="string">"A"</span>,<span class="number">95</span>&#125;&#125;;</div><div class="line"></div><div class="line">Student[] arrStudent = <span class="keyword">new</span> Student[]()&#123;&#123;<span class="string">"D"</span>,<span class="number">90</span>&#125; , &#123;<span class="string">"C"</span>,<span class="number">100</span>&#125; , &#123;<span class="string">"B"</span>,<span class="number">95</span>&#125; , &#123;<span class="string">"A"</span>,<span class="number">95</span>&#125;&#125;;</div></pre></td></tr></table></figure>
-<p>Integer 的包装类就可以这样声明：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//测试 Integer</span></div><div class="line">Integer arrInteger[] = &#123;<span class="number">10</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">7</span>,<span class="number">4</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrInteger);</div><div class="line"><span class="keyword">for</span> (Integer i : arrInteger )&#123;</div><div class="line">	System.out.print(i + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 Double</span></div><div class="line">Double arrDouble[] = &#123;<span class="number">4.3</span>,<span class="number">4.2</span>,<span class="number">3.3</span>,<span class="number">2.1</span>,<span class="number">1.0</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrDouble);</div><div class="line"><span class="keyword">for</span> (Double double1 : arrDouble) &#123;</div><div class="line">	System.out.print(double1 + <span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div><div class="line"></div><div class="line"><span class="comment">//测试 String</span></div><div class="line">String[] arrString = &#123;<span class="string">"D"</span>,<span class="string">"C"</span>,<span class="string">"B"</span>,<span class="string">"A"</span>&#125;;</div><div class="line">SelectionSort.selectionSort(arrString);</div><div class="line"><span class="keyword">for</span> (String string : arrString) &#123;</div><div class="line">	System.out.print(string+<span class="string">" "</span>);</div><div class="line">&#125;</div><div class="line">System.out.println();</div></pre></td></tr></table></figure>
-<p>引用类型的数组不可以在声明时赋值吗？</p>
-<p>引用类型数组怎么定义的？</p>
+<h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h3 id="本书基本原则"><a href="#本书基本原则" class="headerlink" title="本书基本原则"></a>本书基本原则</h3><ol>
+<li>清晰性、简洁性：模块的用户永远不应被模块的行为迷惑</li>
+<li>模块要尽可能小，但又不能太小（模块 Module 是指任何可重用的组件，包括单个方法，到多个包的复杂系统）</li>
+<li>代码应该被重用，而不是被拷贝</li>
+<li>模块之间的依赖性应该尽可能降到最小</li>
+<li>错误应该尽早被检测出来，最好是在编译时</li>
+</ol>
+<p>写出清晰、正确、可用、健壮、灵活和可维护的程序来。如果你能做到这一点，那么获得所需的性能就比较简单了。</p>
 
       
     </div>
@@ -455,7 +468,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Java问题贴/" rel="tag"># Java问题贴</a>
+            <a href="/tags/任务清单/" rel="tag"># 任务清单</a>
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
           
         </div>
       
@@ -468,8 +483,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/07/sortAlgorithm/" rel="next" title="sortAlgorithm">
-                <i class="fa fa-chevron-left"></i> sortAlgorithm
+              <a href="/2017/10/08/Java-Primary-Question/" rel="next" title="Java Primary Question">
+                <i class="fa fa-chevron-left"></i> Java Primary Question
               </a>
             
           </div>
@@ -477,10 +492,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/09/Effective-Java/" rel="prev" title="Effective Java">
-                Effective Java <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -675,7 +686,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#引用数组的赋值问题"><span class="nav-number">1.</span> <span class="nav-text">引用数组的赋值问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chapter-1"><span class="nav-number">1.</span> <span class="nav-text">Chapter 1</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#本书基本原则"><span class="nav-number">1.1.</span> <span class="nav-text">本书基本原则</span></a></li></ol></li></ol></div>
             
 
           </div>
