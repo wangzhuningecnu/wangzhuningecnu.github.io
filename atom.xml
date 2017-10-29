@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-10-27T04:42:31.000Z</updated>
+  <updated>2017-10-29T14:12:32.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,91 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>论文相关</title>
+    <link href="http://yoursite.com/2017/10/29/MyPaper/"/>
+    <id>http://yoursite.com/2017/10/29/MyPaper/</id>
+    <published>2017-10-29T14:11:38.000Z</published>
+    <updated>2017-10-29T14:12:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.cheyun.com/content/10999" target="_blank" rel="external">彩虹无线发布“立方体计划”：前装车联网大数据的两种玩法</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.cheyun.com/content/10999&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;彩虹无线发布“立方体计划”：前装车联网大数据的两种玩法&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="毕设论文" scheme="http://yoursite.com/categories/%E6%AF%95%E8%AE%BE%E8%AE%BA%E6%96%87/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hencoder 朱凯的高级教程</title>
+    <link href="http://yoursite.com/2017/10/29/hencoder/"/>
+    <id>http://yoursite.com/2017/10/29/hencoder/</id>
+    <published>2017-10-29T13:57:51.000Z</published>
+    <updated>2017-10-29T14:44:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="给高级-Android-工程师的进阶手册"><a href="#给高级-Android-工程师的进阶手册" class="headerlink" title="给高级 Android 工程师的进阶手册"></a>给高级 Android 工程师的进阶手册</h2><p>第一讲，讲 UI </p><p>一般使用 自带控件 + 开源库，可以实现大部分 UI 效果。但一些新颖的效果，要自定义 View 来实现。</p><p>自定义 View 的 3 个关键点：</p><ol><li>布局</li><li>绘制</li><li>触摸反馈</li></ol><p>听课：</p><p>录播的视频 + 文字 + 练习项目。视频负责打通概念，文字负责阐述细节，练习项目负责最后一公里，让你从「我懂了」变成「我会了」</p><h2 id="自定义-View-1-1-绘制基础"><a href="#自定义-View-1-1-绘制基础" class="headerlink" title="自定义 View 1-1 绘制基础"></a>自定义 View 1-1 绘制基础</h2><p>绘制就是控件内容的显示。</p><p>自定义绘制就是你来接管绘制的过程，操作绘制细节。使用系统 API 是绘制不出柱状图和饼形图的，即使绘制出来，性能也不佳，这时要使用自定义绘制 View。</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/FjWJE" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/xA8moN" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/ibMahJ" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/K3h2BO" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/PRepXD" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;给高级-Android-工程师的进阶手册&quot;&gt;&lt;a href=&quot;#给高级-Android-工程师的进阶手册&quot; class=&quot;headerlink&quot; title=&quot;给高级 Android 工程师的进阶手册&quot;&gt;&lt;/a&gt;给高级 Android 工程师的进阶手册&lt;/h2&gt;&lt;
+      
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="朱凯" scheme="http://yoursite.com/tags/%E6%9C%B1%E5%87%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颠覆你的传统英语学习 - 杨萃先</title>
+    <link href="http://yoursite.com/2017/10/27/Pronunciation-of-Miss-Yang/"/>
+    <id>http://yoursite.com/2017/10/27/Pronunciation-of-Miss-Yang/</id>
+    <published>2017-10-27T06:06:04.000Z</published>
+    <updated>2017-10-28T01:25:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>视频地址：<a href="https://search.bilibili.com/all?keyword=%E6%92%95%E6%8E%89%E5%8D%95%E8%AF%8D%E8%AF%AD%E6%B3%95%E4%B9%A6%EF%BC%8C%E9%A2%A0%E8%A6%86%E4%BD%A0%E7%9A%84%E4%BC%A0%E7%BB%9F%E8%8B%B1%E8%AF%AD%E5%AD%A6%E4%B9%A0&amp;from_source=banner_search" target="_blank" rel="external">撕掉单词语法书，颠覆你的传统英语学习</a></p><h2 id="第-0-课-找对方法"><a href="#第-0-课-找对方法" class="headerlink" title="第 0 课 - 找对方法"></a>第 0 课 - 找对方法</h2><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/vgXRlR" alt="正确的方法"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/4WF92Q" alt="听100小时"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/XeudRn" alt="学生活中的词"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/zTtYUW" alt="说100小时"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/cx2Hm8" alt="听好听的"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/YRjqHy" alt="先练听说"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/Oe1opZ" alt="背课文"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/YnNMY5" alt="下载app"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/arc4KG" alt="每天找5个生词"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/okCL7C" alt="听这些"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/vl2u5t" alt="喜马拉雅上的这些事之前的学员"></p><p>本节课作业：</p><ol><li>下载 app，找到和自己生活、工作密切相关的部分听，听不懂的，立马查，可以看字幕，怎么能听懂怎么听。听满 100 小时。</li><li>生活中，环境中，只要是不会的生词，立马查。至少找到五个不会的。</li><li>关注老师个人公众号 “途正英语”。看老师的文章和小故事。</li><li>找志同道合的小伙伴讨论，说英语。</li></ol><h2 id="第-1-课-背单词大法"><a href="#第-1-课-背单词大法" class="headerlink" title="第 1 课 - 背单词大法"></a>第 1 课 - 背单词大法</h2><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/yVXeUo" alt="背单词"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/VGy0QW" alt="不推荐的方法"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/TdPGqD" alt="什么时候查"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/PKBv4G" alt="推荐的方法"></p><p>记单词：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/zhhfSo" alt="记单词"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/jP8W3" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/vAWBm9" alt="象形"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/ZXC66N" alt="衍生方法"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/WtmDWL" alt="象象"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/j2q1ji" alt="象象"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/yzHndv" alt="合成"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/w3Mr7S" alt="合成"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/CD6ksy" alt="合成"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/dqaCMt" alt="词根词缀"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/9KkL6i" alt="词根词缀"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/fcYBZS" alt="ceed = walk"></p><p>作业：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/ehbhKH" alt="作业"></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/ojYfdm" alt="作业"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;视频地址：&lt;a href=&quot;https://search.bilibili.com/all?keyword=%E6%92%95%E6%8E%89%E5%8D%95%E8%AF%8D%E8%AF%AD%E6%B3%95%E4%B9%A6%EF%BC%8C%E9%A2%A0%E
+      
+    
+    </summary>
+    
+      <category term="英语" scheme="http://yoursite.com/categories/%E8%8B%B1%E8%AF%AD/"/>
+    
+      <category term="英语口语" scheme="http://yoursite.com/categories/%E8%8B%B1%E8%AF%AD/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/"/>
+    
+    
+      <category term="英语口语" scheme="http://yoursite.com/tags/%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>纪老师英语音标课程</title>
     <link href="http://yoursite.com/2017/10/26/Pronunciation-of-Miss-Ji/"/>
     <id>http://yoursite.com/2017/10/26/Pronunciation-of-Miss-Ji/</id>
     <published>2017-10-26T05:00:14.000Z</published>
-    <updated>2017-10-27T04:42:31.000Z</updated>
+    <updated>2017-10-29T16:18:17.000Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1375&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="自由女神"></p><a id="more"></a><h2 id="视频地址"><a href="#视频地址" class="headerlink" title="视频地址"></a>视频地址</h2><p><a href="http://www.360doc.com/content/14/0801/16/9675619_398636221.shtml" target="_blank" rel="external">纪老师英语 - 音标篇</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMTQ5MjM2NDI4&amp;embedid=NTguMjA5Ljc4LjE4OQIzNzMwOTEwNwJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNTguMjA5Ljc4LjE4OQIzNzMwOTEwNwJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509027642371h8w%252526vstp%25253D9%252526svstp%25253D3%2526type%253D0%2526embsig%253D1_1509028782_ff5ca560dc4dd7c1dd0c894c14395fbf" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标一 5 个元音 + 1 个辅音</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMzc0ODQ5MDQ0&amp;embedid=NTguMjA5Ljc4LjE4OQI5MzcxMjI2MQJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNTguMjA5Ljc4LjE4OQI5MzcxMjI2MQJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509027642371h8w%252526vstp%25253D8%252526svstp%25253D2%2526type%253D0%2526embsig%253D1_1509028759_a2b5284c60c3c2ed7a9d57714d0c4d70" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标二 5 个辅音的发音方法</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMzc0ODQ5MTY0&amp;embedid=MjE5LjIyOC4xNDYuMTkxAjkzNzEyMjkxAnd3dy4zNjBkb2MuY29tAi9jb250ZW50LzE0LzA4MDEvMTYvOTY3NTYxOV8zOTg2MzYyMjEuc2h0bWw%3D&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DMjE5LjIyOC4xNDYuMTkxAjkzNzEyMjkxAnd3dy4zNjBkb2MuY29tAi9jb250ZW50LzE0LzA4MDEvMTYvOTY3NTYxOV8zOTg2MzYyMjEuc2h0bWw%253D%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D1509073572844NndZCw-1509073572854%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509072880602Ns8%252526vstp%25253D15%252526svstp%25253D6%2526type%253D0%2526embsig%253D1_1509077805_3ceabeebb636125f6e25df3edb68a97e" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标三  8 个双元音的发音方法</a></p><p><a href="">纪老师 英语音标口诀记忆法(光碟 4 )</a></p><p><a href="http://my.tv.sohu.com/us/63300375/63891414.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 1 句</a></p><p><a href="http://my.tv.sohu.com/us/63345012/63891417.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 32 句</a></p><p><a href="http://my.tv.sohu.com/us/63329502/63891412.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 71 句</a></p><p><a href="">纪老师 英语音标口诀记忆法(光碟 7 )</a></p><h2 id="音标一"><a href="#音标一" class="headerlink" title="音标一"></a>音标一</h2><p>元音：20 个，相当于韵母</p><p>辅音：28 个，相当于声母</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/TjXfoR" alt="所有的元音辅音"></p><p>第一节学习 5 个元音和 1 个辅音：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/jpIj8B" alt="5元1辅"></p><p>发言口诀：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/dmtQYO" alt="发言口诀"></p><h2 id="音标二"><a href="#音标二" class="headerlink" title="音标二"></a>音标二</h2><p>第二节学习 5 个辅音 </p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/Sjp1Eq" alt="5个辅音"></p><p>f、l、m、n  的发音：一种是读汉语拼音里的flmn，另一种是读这四个英文字母发音的尾音。</p><p>后面有可以一起拼读的就发flmn的音，没有一起拼读的音就发英文字母的尾音。</p><p>r 后面有可以一起拼读的音就发 ru 音，没有一起拼读的音就发 “儿”化音。</p><h2 id="音标三"><a href="#音标三" class="headerlink" title="音标三"></a>音标三</h2><p>第三节学习 8 个双元音。</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/IdAb5M" alt="8个双元音"></p><p>英语讲究「滑音」。双元音的读法是从第一个音向后面一个滑动。</p><p>新旧音标对比如下：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/wnPSay" alt="新旧写法对比"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74?w=1375&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="自由女神"></p><a id="more"></a><h2 id="视频地址"><a href="#视频地址" class="headerlink" title="视频地址"></a>视频地址</h2><p><a href="http://www.360doc.com/content/14/0801/16/9675619_398636221.shtml" target="_blank" rel="external">纪老师英语 - 音标篇</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMTQ5MjM2NDI4&amp;embedid=NTguMjA5Ljc4LjE4OQIzNzMwOTEwNwJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNTguMjA5Ljc4LjE4OQIzNzMwOTEwNwJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509027642371h8w%252526vstp%25253D9%252526svstp%25253D3%2526type%253D0%2526embsig%253D1_1509028782_ff5ca560dc4dd7c1dd0c894c14395fbf" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标一 5 个元音 + 1 个辅音</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMzc0ODQ5MDQ0&amp;embedid=NTguMjA5Ljc4LjE4OQI5MzcxMjI2MQJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNTguMjA5Ljc4LjE4OQI5MzcxMjI2MQJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509027642371h8w%252526vstp%25253D8%252526svstp%25253D2%2526type%253D0%2526embsig%253D1_1509028759_a2b5284c60c3c2ed7a9d57714d0c4d70" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标二 5 个辅音的发音方法</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMzc0ODQ5MTY0&amp;embedid=MjE5LjIyOC4xNDYuMTkxAjkzNzEyMjkxAnd3dy4zNjBkb2MuY29tAi9jb250ZW50LzE0LzA4MDEvMTYvOTY3NTYxOV8zOTg2MzYyMjEuc2h0bWw%3D&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DMjE5LjIyOC4xNDYuMTkxAjkzNzEyMjkxAnd3dy4zNjBkb2MuY29tAi9jb250ZW50LzE0LzA4MDEvMTYvOTY3NTYxOV8zOTg2MzYyMjEuc2h0bWw%253D%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D1509073572844NndZCw-1509073572854%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509072880602Ns8%252526vstp%25253D15%252526svstp%25253D6%2526type%253D0%2526embsig%253D1_1509077805_3ceabeebb636125f6e25df3edb68a97e" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标三  8 个双元音的发音方法</a></p><p><a href="http://static.youku.com/v20170518.0/v/swf/upsplayer/loader.swf?VideoIDS=XMzc0ODQ5Mzg0&amp;embedid=NTguMjA5Ljc5LjE4NQI5MzcxMjM0NgJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s&amp;wd=&amp;winType=BDskin&amp;cna=tJySD%2BT%2BAQ0CAXTiYawfmTuw&amp;partnerid=0edbfd2e4fc91b72&amp;vext=pid%253D0edbfd2e4fc91b72%2526emb%253DNTguMjA5Ljc5LjE4NQI5MzcxMjM0NgJ3d3cuMzYwZG9jLmNvbQIvY29udGVudC8xNC8wODAxLzE2Lzk2NzU2MTlfMzk4NjM2MjIxLnNodG1s%2526bc%253D%2526cna%253DtJySD%2BT%2BAQ0CAXTiYawfmTuw%2526vvlogext%253Dpc_i%25253D14603834142639jT%252526pc_u%25253D-%252526rvpvid%25253D-%252526rycid%25253D-%252526yvft%25253D1508992567232%252526vsidc%25253D1%252526seid%25253D1509285631592tEg%252526vstp%25253D27%252526svstp%25253D5%2526type%253D0%2526embsig%253D1_1509289072_a16950d7e7b3d58a563f53d5c5866b3a" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标四 12 个辅音的发音方法</a></p><p><a href="http://my.tv.sohu.com/us/63300375/63891414.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 1 句</a></p><p><a href="http://my.tv.sohu.com/us/63345012/63891417.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 32 句</a></p><p><a href="http://my.tv.sohu.com/us/63329502/63891412.shtml" target="_blank" rel="external">纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 71 句</a></p><p><a href="">纪老师 英语音标口诀记忆法(光碟 7 )</a></p><h2 id="音标一"><a href="#音标一" class="headerlink" title="音标一"></a>音标一</h2><p>元音：20 个，相当于韵母</p><p>辅音：28 个，相当于声母</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/TjXfoR" alt="所有的元音辅音"></p><p>第一节学习 5 个元音和 1 个辅音：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/jpIj8B" alt="5元1辅"></p><p>发言口诀：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/dmtQYO" alt="发言口诀"></p><h2 id="音标二"><a href="#音标二" class="headerlink" title="音标二"></a>音标二</h2><p>第二节学习 5 个辅音 </p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/Sjp1Eq" alt="5个辅音"></p><p>f、l、m、n  的发音：一种是读汉语拼音里的flmn，另一种是读这四个英文字母发音的尾音。</p><p>后面有可以一起拼读的就发flmn的音，没有一起拼读的音就发英文字母的尾音。</p><p>r 后面有可以一起拼读的音就发 ru 音，没有一起拼读的音就发 “儿”化音。</p><h2 id="音标三"><a href="#音标三" class="headerlink" title="音标三"></a>音标三</h2><p>第三节学习 8 个双元音。</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/IdAb5M" alt="8个双元音"></p><p>英语讲究「滑音」。双元音的读法是从第一个音向后面一个滑动。</p><p>新旧音标对比如下：</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/wnPSay" alt="新旧写法对比"></p><h2 id="音标四"><a href="#音标四" class="headerlink" title="音标四"></a>音标四</h2><p>12 个辅音的发音方法</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/1CxKoG" alt=""></p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/jj2RCn" alt=""></p><p>噘嘴的 s，发汉语拼音的平舌 s</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/wIOO9s" alt=""></p><p>噘嘴的 z，发汉语拼音的平舌 z</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/6WJ37l" alt=""></p><p>噘嘴的 s，发汉语拼音中的咬舌 s</p><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/4q1xp1" alt=""></p><p>咬舌尖的 r，发汉语拼音中的 r</p>]]></content>
     
     <summary type="html">
     
@@ -61,9 +139,9 @@
       <category term="Android 通用框架设计与完整电商 APP 开发" scheme="http://yoursite.com/categories/%E6%85%95%E8%AF%BE%E7%BD%91/Android-%E9%80%9A%E7%94%A8%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%AE%8C%E6%95%B4%E7%94%B5%E5%95%86-APP-%E5%BC%80%E5%8F%91/"/>
     
     
-      <category term="Android 通用框架" scheme="http://yoursite.com/tags/Android-%E9%80%9A%E7%94%A8%E6%A1%86%E6%9E%B6/"/>
-    
       <category term="未解决的 bug" scheme="http://yoursite.com/tags/%E6%9C%AA%E8%A7%A3%E5%86%B3%E7%9A%84-bug/"/>
+    
+      <category term="Android 通用框架" scheme="http://yoursite.com/tags/Android-%E9%80%9A%E7%94%A8%E6%A1%86%E6%9E%B6/"/>
     
   </entry>
   
@@ -92,9 +170,9 @@
       <category term="懒人必备之 Android 效率开发框架" scheme="http://yoursite.com/categories/%E6%85%95%E8%AF%BE%E7%BD%91/%E6%87%92%E4%BA%BA%E5%BF%85%E5%A4%87%E4%B9%8B-Android-%E6%95%88%E7%8E%87%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6/"/>
     
     
-      <category term="未解决的 bug" scheme="http://yoursite.com/tags/%E6%9C%AA%E8%A7%A3%E5%86%B3%E7%9A%84-bug/"/>
-    
       <category term="Android 框架" scheme="http://yoursite.com/tags/Android-%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="未解决的 bug" scheme="http://yoursite.com/tags/%E6%9C%AA%E8%A7%A3%E5%86%B3%E7%9A%84-bug/"/>
     
   </entry>
   
