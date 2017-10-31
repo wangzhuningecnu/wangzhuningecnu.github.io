@@ -305,6 +305,180 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/30/Android-developing-bug/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wangzhuning">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headimage.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="年轻人不要老熬夜">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/30/Android-developing-bug/" itemprop="url">Android 开发中遇到的 bug</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-30T17:36:34+08:00">
+                2017-10-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Android/" itemprop="url" rel="index">
+                    <span itemprop="name">Android</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  192
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="NoSuchMethodError-No-static-method-wrapSharedElementTransition"><a href="#NoSuchMethodError-No-static-method-wrapSharedElementTransition" class="headerlink" title="NoSuchMethodError: No static method wrapSharedElementTransition"></a>NoSuchMethodError: No static method wrapSharedElementTransition</h2><p>上汽大通项目遇到火山级 bug，点击</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">java.lang.NoSuchMethodError: <span class="function">No <span class="keyword">static</span> method <span class="title">wrapSharedElementTransition</span><span class="params">(Ljava/lang/Object;)</span>Ljava/lang/Object</span>; in <span class="class"><span class="keyword">class</span> <span class="title">Landroid</span>/<span class="title">support</span>/<span class="title">v4</span>/<span class="title">app</span>/<span class="title">FragmentTransitionCompat21</span></span>; <span class="function">or its <span class="keyword">super</span> <span class="title">classes</span> <span class="params">(declaration of <span class="string">'android.support.v4.app.FragmentTransitionCompat21'</span> appears in /data/app/com.example.aidrive2<span class="number">-1</span>/base.apk)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">getSharedElementTransition</span><span class="params">(BackStackRecord.java:<span class="number">1156</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">configureTransitions</span><span class="params">(BackStackRecord.java:<span class="number">1222</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">beginTransition</span><span class="params">(BackStackRecord.java:<span class="number">1112</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">run</span><span class="params">(BackStackRecord.java:<span class="number">721</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.FragmentManagerImpl.<span class="title">execPendingActions</span><span class="params">(FragmentManager.java:<span class="number">1677</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.FragmentManagerImpl$1.<span class="title">run</span><span class="params">(FragmentManager.java:<span class="number">536</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Handler.<span class="title">handleCallback</span><span class="params">(Handler.java:<span class="number">815</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Handler.<span class="title">dispatchMessage</span><span class="params">(Handler.java:<span class="number">104</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Looper.<span class="title">loop</span><span class="params">(Looper.java:<span class="number">194</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.app.ActivityThread.<span class="title">main</span><span class="params">(ActivityThread.java:<span class="number">5556</span>)</span></span></div><div class="line"><span class="function">                                                                          at java.lang.reflect.Method.<span class="title">invoke</span><span class="params">(Native Method)</span></span></div><div class="line"><span class="function">                                                                          at java.lang.reflect.Method.<span class="title">invoke</span><span class="params">(Method.java:<span class="number">372</span>)</span></span></div><div class="line"><span class="function">                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.<span class="title">run</span><span class="params">(ZygoteInit.java:<span class="number">967</span>)</span></span></div><div class="line"><span class="function">                                                                          at com.android.internal.os.ZygoteInit.<span class="title">main</span><span class="params">(ZygoteInit.java:<span class="number">762</span>)</span></span></div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/29/MyPaper/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -974,7 +1148,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  468
+                  557
                 </span>
               
 
@@ -2026,194 +2200,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/07/sortAlgorithm/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="wangzhuning">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/headimage.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="年轻人不要老熬夜">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/10/07/sortAlgorithm/" itemprop="url">sortAlgorithm</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-07T11:56:40+08:00">
-                2017-10-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法/" itemprop="url" rel="index">
-                    <span itemprop="name">算法</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/算法/排序算法/" itemprop="url" rel="index">
-                    <span itemprop="name">排序算法</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  2,066
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  10
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?dpr=1&amp;auto=compress,format&amp;fit=crop&amp;w=1350&amp;h=&amp;q=80&amp;cs=tinysrgb&amp;crop=" alt="nature"></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/10/07/sortAlgorithm/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2267,7 +2253,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -2289,7 +2275,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -2362,7 +2348,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">6.5k字</span>
+    <span title="博客全站共">6.8k字</span>
   
 </div>
 
