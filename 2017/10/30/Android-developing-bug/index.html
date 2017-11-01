@@ -78,18 +78,17 @@
 
 
 
-<meta name="description" content="NoSuchMethodError: No static method wrapSharedElementTransition上汽大通项目遇到火山级 bug，点击 123456789101112131415java.lang.NoSuchMethodError: No static method wrapSharedElementTransition(Ljava/lang/Object;)Ljav">
 <meta name="keywords" content="Android,bug">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 开发中遇到的 bug">
 <meta property="og:url" content="http://yoursite.com/2017/10/30/Android-developing-bug/index.html">
 <meta property="og:site_name" content="年轻人不要老熬夜">
-<meta property="og:description" content="NoSuchMethodError: No static method wrapSharedElementTransition上汽大通项目遇到火山级 bug，点击 123456789101112131415java.lang.NoSuchMethodError: No static method wrapSharedElementTransition(Ljava/lang/Object;)Ljav">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-30T10:00:11.000Z">
+<meta property="og:image" content="https://images.unsplash.com/photo-1496264057429-6a331647b69e?auto=format&fit=crop&w=1502&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
+<meta property="og:updated_time" content="2017-11-01T07:02:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 开发中遇到的 bug">
-<meta name="twitter:description" content="NoSuchMethodError: No static method wrapSharedElementTransition上汽大通项目遇到火山级 bug，点击 123456789101112131415java.lang.NoSuchMethodError: No static method wrapSharedElementTransition(Ljava/lang/Object;)Ljav">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1496264057429-6a331647b69e?auto=format&fit=crop&w=1502&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D">
 
 
 
@@ -394,7 +393,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  192
+                  292
                 </span>
               
 
@@ -410,7 +409,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -431,8 +430,16 @@
       
 
       
-        <h2 id="NoSuchMethodError-No-static-method-wrapSharedElementTransition"><a href="#NoSuchMethodError-No-static-method-wrapSharedElementTransition" class="headerlink" title="NoSuchMethodError: No static method wrapSharedElementTransition"></a>NoSuchMethodError: No static method wrapSharedElementTransition</h2><p>上汽大通项目遇到火山级 bug，点击</p>
+        <p><img src="https://images.unsplash.com/photo-1496264057429-6a331647b69e?auto=format&amp;fit=crop&amp;w=1502&amp;q=60&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt=""></p>
+<a id="more"></a>
+<h2 id="NoSuchMethodError-No-static-method-wrapSharedElementTransition"><a href="#NoSuchMethodError-No-static-method-wrapSharedElementTransition" class="headerlink" title="NoSuchMethodError: No static method wrapSharedElementTransition"></a>NoSuchMethodError: No static method wrapSharedElementTransition</h2><p>上汽大通项目遇到火山级 bug，点击</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">java.lang.NoSuchMethodError: <span class="function">No <span class="keyword">static</span> method <span class="title">wrapSharedElementTransition</span><span class="params">(Ljava/lang/Object;)</span>Ljava/lang/Object</span>; in <span class="class"><span class="keyword">class</span> <span class="title">Landroid</span>/<span class="title">support</span>/<span class="title">v4</span>/<span class="title">app</span>/<span class="title">FragmentTransitionCompat21</span></span>; <span class="function">or its <span class="keyword">super</span> <span class="title">classes</span> <span class="params">(declaration of <span class="string">'android.support.v4.app.FragmentTransitionCompat21'</span> appears in /data/app/com.example.aidrive2<span class="number">-1</span>/base.apk)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">getSharedElementTransition</span><span class="params">(BackStackRecord.java:<span class="number">1156</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">configureTransitions</span><span class="params">(BackStackRecord.java:<span class="number">1222</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">beginTransition</span><span class="params">(BackStackRecord.java:<span class="number">1112</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.BackStackRecord.<span class="title">run</span><span class="params">(BackStackRecord.java:<span class="number">721</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.FragmentManagerImpl.<span class="title">execPendingActions</span><span class="params">(FragmentManager.java:<span class="number">1677</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.support.v4.app.FragmentManagerImpl$1.<span class="title">run</span><span class="params">(FragmentManager.java:<span class="number">536</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Handler.<span class="title">handleCallback</span><span class="params">(Handler.java:<span class="number">815</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Handler.<span class="title">dispatchMessage</span><span class="params">(Handler.java:<span class="number">104</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.os.Looper.<span class="title">loop</span><span class="params">(Looper.java:<span class="number">194</span>)</span></span></div><div class="line"><span class="function">                                                                          at android.app.ActivityThread.<span class="title">main</span><span class="params">(ActivityThread.java:<span class="number">5556</span>)</span></span></div><div class="line"><span class="function">                                                                          at java.lang.reflect.Method.<span class="title">invoke</span><span class="params">(Native Method)</span></span></div><div class="line"><span class="function">                                                                          at java.lang.reflect.Method.<span class="title">invoke</span><span class="params">(Method.java:<span class="number">372</span>)</span></span></div><div class="line"><span class="function">                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.<span class="title">run</span><span class="params">(ZygoteInit.java:<span class="number">967</span>)</span></span></div><div class="line"><span class="function">                                                                          at com.android.internal.os.ZygoteInit.<span class="title">main</span><span class="params">(ZygoteInit.java:<span class="number">762</span>)</span></span></div></pre></td></tr></table></figure>
+<h2 id="app-dexDebug：-Library-Java-JavaVirtualMachines-jdk1-8-0-92-jdk-Contents-Home-bin-java’’-finished-with-non-zero-exit-value-2"><a href="#app-dexDebug：-Library-Java-JavaVirtualMachines-jdk1-8-0-92-jdk-Contents-Home-bin-java’’-finished-with-non-zero-exit-value-2" class="headerlink" title="app:dexDebug：/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java’’ finished with non-zero exit value 2"></a>app:dexDebug：/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java’’ finished with non-zero exit value 2</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Error:Execution failed <span class="keyword">for</span> task <span class="string">':app:dexDebug'</span>. &gt; com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process <span class="string">'command '</span>/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java<span class="string">''</span> finished with non-zero exit value <span class="number">2</span></div></pre></td></tr></table></figure>
+<p>是 app/build.gradle 依赖包的版本问题，</p>
+<p>参考：</p>
+<p><a href="https://stackoverflow.com/questions/30001051/appdexdebug-execexception-finished-with-non-zero-exit-value-2" target="_blank" rel="external">https://stackoverflow.com/questions/30001051/appdexdebug-execexception-finished-with-non-zero-exit-value-2</a></p>
+<p><a href="http://www.cnblogs.com/creasylai19/p/5027757.html" target="_blank" rel="external">http://www.cnblogs.com/creasylai19/p/5027757.html</a></p>
+<p>状态：未解决</p>
 
       
     </div>
@@ -668,7 +675,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#NoSuchMethodError-No-static-method-wrapSharedElementTransition"><span class="nav-number">1.</span> <span class="nav-text">NoSuchMethodError: No static method wrapSharedElementTransition</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#NoSuchMethodError-No-static-method-wrapSharedElementTransition"><span class="nav-number">1.</span> <span class="nav-text">NoSuchMethodError: No static method wrapSharedElementTransition</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#app-dexDebug：-Library-Java-JavaVirtualMachines-jdk1-8-0-92-jdk-Contents-Home-bin-java’’-finished-with-non-zero-exit-value-2"><span class="nav-number">2.</span> <span class="nav-text">app:dexDebug：/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java’’ finished with non-zero exit value 2</span></a></li></ol></div>
             
 
           </div>
@@ -702,7 +709,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">6.8k字</span>
+    <span title="博客全站共">7.1k字</span>
   
 </div>
 
