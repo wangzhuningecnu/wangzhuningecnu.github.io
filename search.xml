@@ -16,7 +16,7 @@
   <entry>
     <title><![CDATA[Head First Java]]></title>
     <url>%2F2017%2F11%2F02%2FHead-First-Java%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <content type="text"><![CDATA[Java 的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。 Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181920212223242526import java.io.BufferedReader;import java.io.InputStreamReader;public class Helper &#123; public static void main(String args[]) &#123; Helper helper = new Helper(); System.out.println(helper.getUserInput("Please enter a number: ")); &#125; public String getUserInput(String prompt) &#123; String inputLine = null; System.out.println(prompt + " "); try &#123; BufferedReader is = new BufferedReader(new InputStreamReader(System.in)); inputLine = is.readLine(); if (inputLine.length() == 0) &#123; return null; &#125; &#125; catch (Exception e) &#123; // TODO: handle exception e.printStackTrace(); &#125; return inputLine; &#125;&#125; 其中 123if (inputLine.length() == 0) &#123; return null;&#125; 这是做”用户什么都没输入的处理”，不加这句，什么也不会输出 另外 12String string = "dsfs";System.out.println(string.length()); String 类型的变量也有 length() 方法，不止数组有。 Returns: the length of the sequence of characters represented by this object. 如果 string 是 null ，则string.length() 会报空指向异常。 foreach 与 for1for(int cell : locationCells ) &#123;···&#125; 编译器会这么做： 创建名为 cell 的 int 变量 将 locationCells 的第一个元素值赋给 cell 执行循环内容 赋值给下一个元素 cell 重复执行至所有的元素被运行完毕为止 locationCells 的集合必须是数组或其他集合的引用。而且 int 这个位置的类型要与 locationCells 兼容。 注意：可以看出，在 foreach 的执行过程中，采用了数组数据赋值，所以，cell 值的改变并不会影响 原来数组里那个位置的元素值。如果需要改变原来的数组，如排序，就要用之前的 for 循环。 原始的 for 循环： 12for(int i = 0 ; i&lt;0 ; i++ ) &#123;···&#125; 1 2 3 4 运行顺序： 1 -&gt; 2 ：1. true -&gt; 4 -&gt; 3 -&gt; 2 : 1. true -&gt; 4 -&gt; 3 -&gt; 2 :1. true -&gt; 4 -&gt; 3 -&gt; 2 : ​ 2.false -&gt; end 2.false -&gt; end 2.false -&gt; end for 与 while 比较： 不知道执行次数用 while，知道执行次数用 for更清晰。 String 转 int1int num = Integer.parseInt("3"); Integer 的 parseInt() 方法，能将 String 解析。 这个方法仅对代表数字的 String 起作用，除此之外，程序就会崩溃，抛出异常。 Java 传参数是值拷贝参数的值是由实参拷贝而来的，参数的改变不会影响到原先的值，但要是传递的是引用变量，那么引用变量的远程控制（字节组合代表取得远程控制对象的方法）也会拷贝过来，那么参数的改变就会影响原来的值。 变量的比较 == ：用来比较两个变量的字节组合是否相等，对于 primitive 主数据类型来说，字节组合就是实际的变量值，对于引用来说，字节组合是取得对象的方法（指针），== 就是判断两个引用是否指向同一个对象。 equals（）用来判断两个对象是否在意义上相等。即对象的相等性。 实例变量 VS 局部变量实例变量声明在类内，未初始化时，有默认值。integer 和 char 类型默认为 0 ，boolean 默认为 false，对象引用默认为 null。null 表示没有操作对象的远程控制，他是个引用而不是对象。 局部变量声明在方法内，未初始化时，没有默认值。方法的参数也是局部变量。如果局部变量未初始化就使用，编译器会报错。 random() 方法产生随机数产生 [n,m] 之间的随机数： 1int x = (int)( Math.random() * (m-n+1) ); Math.random() 方法返回介于 0 与 1 之间的 double 值，然后将此值乘以数组元素个数，再取整数值。 random() Returns: a pseudorandom double greater than or equal to 0.0 and less than 1.0. 大于等于 0 ，小于 1. 写伪代码参考Chapter 5 Page 100 类、方法、变量的命名规则 必须以字母，下划线，或 $ 开头 除第一个字符外，后面可以用数字 避开 Java 的关键字 变量的两种口味 香辣的对象引用：保存的是对象的引用，以字节来表示取得对象的方法（遥控器）。 清凉的 primitive 主数据类型：保存的是变量本身，以字节代表实际的变量值，有 boolean、char、byte、short、int、long、float、double 8种。 注意，数组不论被声明来承载的是 primitive 主数据类型，或对象引用，数组永远是对象。 Java 是个强类型语言类型不许乱用，可以被隐含的放大（小值放大容器），或明确的缩小（强制类型转换）]]></content>
       <categories>
         <category>Java</category>
         <category>Head First Java</category>
@@ -93,8 +93,8 @@
         <category>Android 通用框架设计与完整电商 APP 开发</category>
       </categories>
       <tags>
-        <tag>未解决的 bug</tag>
         <tag>Android 通用框架</tag>
+        <tag>未解决的 bug</tag>
       </tags>
   </entry>
   <entry>
@@ -106,8 +106,8 @@
         <category>懒人必备之 Android 效率开发框架</category>
       </categories>
       <tags>
-        <tag>Android 框架</tag>
         <tag>未解决的 bug</tag>
+        <tag>Android 框架</tag>
       </tags>
   </entry>
   <entry>
@@ -196,8 +196,8 @@
       </categories>
       <tags>
         <tag>任务清单</tag>
-        <tag>Head First Java</tag>
         <tag>书单</tag>
+        <tag>Head First Java</tag>
         <tag>Effective Java</tag>
         <tag>Thinking in Java</tag>
         <tag>Android 第一行代码</tag>

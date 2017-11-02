@@ -78,15 +78,28 @@
 
 
 
+<meta name="description" content="Java  的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。     Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181">
 <meta name="keywords" content="Head First Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Head First Java">
 <meta property="og:url" content="http://yoursite.com/2017/11/02/Head-First-Java/index.html">
 <meta property="og:site_name" content="年轻人不要老熬夜">
+<meta property="og:description" content="Java  的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。     Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-02T03:24:12.000Z">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/pdfDga">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/8gy7r7">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/8TbHd">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/GDRPWt">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/wIb8PC">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/YTC5LE">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/H8Ym1i">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/mz9c7e">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/zJv58u">
+<meta property="og:updated_time" content="2017-11-02T09:56:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First Java">
+<meta name="twitter:description" content="Java  的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。     Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181">
+<meta name="twitter:image" content="https://cdn-std.dprcdn.net/files/acc_587316/pdfDga">
 
 
 
@@ -402,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  1,201
                 </span>
               
 
@@ -418,7 +431,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -440,6 +453,76 @@
 
       
         <a id="more"></a>
+<h2 id="Java-的垃圾回收"><a href="#Java-的垃圾回收" class="headerlink" title="Java  的垃圾回收"></a>Java  的垃圾回收</h2><p>p40</p>
+<h2 id="对象的创建内存示意图"><a href="#对象的创建内存示意图" class="headerlink" title="对象的创建内存示意图"></a>对象的创建内存示意图</h2><p><img src="https://cdn-std.dprcdn.net/files/acc_587316/pdfDga" alt=""></p>
+<p>对象的引用变量有多大？</p>
+<p>除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。</p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/8gy7r7" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/8TbHd" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/GDRPWt" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/wIb8PC" alt=""></p>
+<h2 id="Head-First-Java-基础知识附录"><a href="#Head-First-Java-基础知识附录" class="headerlink" title="Head First Java 基础知识附录"></a>Head First Java 基础知识附录</h2><h3 id="取得命令行用户输入字符串的方法"><a href="#取得命令行用户输入字符串的方法" class="headerlink" title="取得命令行用户输入字符串的方法"></a>取得命令行用户输入字符串的方法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.BufferedReader;</div><div class="line"><span class="keyword">import</span> java.io.InputStreamReader;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Helper</span> </span>&#123;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</div><div class="line">		Helper helper = <span class="keyword">new</span> Helper();</div><div class="line">		System.out.println(helper.getUserInput(<span class="string">"Please enter a number: "</span>));</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">getUserInput</span><span class="params">(String prompt)</span> </span>&#123;</div><div class="line">		String inputLine = <span class="keyword">null</span>;</div><div class="line">		System.out.println(prompt + <span class="string">" "</span>);</div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			BufferedReader is = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(System.in));</div><div class="line">			inputLine = is.readLine();</div><div class="line">			<span class="keyword">if</span> (inputLine.length() == <span class="number">0</span>) &#123;</div><div class="line">				<span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">			&#125;</div><div class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">			<span class="comment">// <span class="doctag">TODO:</span> handle exception</span></div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> inputLine;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>其中</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> (inputLine.length() == <span class="number">0</span>) &#123;</div><div class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这是做”用户什么都没输入的处理”，不加这句，什么也不会输出</p>
+<p>另外</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">String string = <span class="string">"dsfs"</span>;</div><div class="line">System.out.println(string.length());</div></pre></td></tr></table></figure>
+<p>String 类型的变量也有 length() 方法，不止数组有。</p>
+<p>Returns:</p>
+<p>the length of the sequence of characters represented by this object.</p>
+<p>如果 string 是 null ，则string.length() 会报空指向异常。</p>
+<h3 id="foreach-与-for"><a href="#foreach-与-for" class="headerlink" title="foreach 与 for"></a>foreach 与 for</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> cell : locationCells ) &#123;···&#125;</div></pre></td></tr></table></figure>
+<p>编译器会这么做：</p>
+<ol>
+<li>创建名为 cell 的 int 变量</li>
+<li>将 locationCells 的第一个元素值赋给 cell</li>
+<li>执行循环内容</li>
+<li>赋值给下一个元素 cell</li>
+<li>重复执行至所有的元素被运行完毕为止</li>
+</ol>
+<p>locationCells 的集合必须是数组或其他集合的引用。而且 int 这个位置的类型要与 locationCells 兼容。</p>
+<blockquote>
+<p>注意：可以看出，在 foreach 的执行过程中，采用了数组数据赋值，所以，cell 值的改变并不会影响 原来数组里那个位置的元素值。如果需要改变原来的数组，如排序，就要用之前的 for 循环。</p>
+</blockquote>
+<p>原始的 for 循环：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;<span class="number">0</span> ; i++ ) &#123;···&#125;</div><div class="line">        <span class="number">1</span>        <span class="number">2</span>     <span class="number">3</span>      <span class="number">4</span></div></pre></td></tr></table></figure>
+<p>运行顺序：</p>
+<p>1 -&gt; 2 ：1. true  -&gt; 4  -&gt; 3  -&gt; 2  : 1. true  -&gt; 4  -&gt; 3  -&gt; 2  :1. true  -&gt; 4  -&gt; 3  -&gt; 2  :</p>
+<p>​               2.false  -&gt; end                 2.false  -&gt; end                2.false  -&gt; end</p>
+<p>for 与 while 比较：</p>
+<p>不知道执行次数用 while，知道执行次数用 for更清晰。</p>
+<h3 id="String-转-int"><a href="#String-转-int" class="headerlink" title="String 转 int"></a>String 转 int</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> num = Integer.parseInt(<span class="string">"3"</span>);</div></pre></td></tr></table></figure>
+<p>Integer 的 parseInt() 方法，能将 String 解析。</p>
+<p>这个方法仅对代表数字的 String 起作用，除此之外，程序就会崩溃，抛出异常。</p>
+<h3 id="Java-传参数是值拷贝"><a href="#Java-传参数是值拷贝" class="headerlink" title="Java 传参数是值拷贝"></a>Java 传参数是值拷贝</h3><p>参数的值是由实参拷贝而来的，参数的改变不会影响到原先的值，但要是传递的是引用变量，那么引用变量的远程控制（字节组合代表取得远程控制对象的方法）也会拷贝过来，那么参数的改变就会影响原来的值。</p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/YTC5LE" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/H8Ym1i" alt=""></p>
+<h3 id="变量的比较"><a href="#变量的比较" class="headerlink" title="变量的比较"></a>变量的比较</h3><ol>
+<li>== ：用来比较两个变量的字节组合是否相等，对于 primitive 主数据类型来说，字节组合就是实际的变量值，对于引用来说，字节组合是取得对象的方法（指针），== 就是判断两个引用是否指向同一个对象。</li>
+<li>equals（）用来判断两个对象是否在意义上相等。即对象的相等性。</li>
+</ol>
+<h3 id="实例变量-VS-局部变量"><a href="#实例变量-VS-局部变量" class="headerlink" title="实例变量 VS 局部变量"></a>实例变量 VS 局部变量</h3><p>实例变量声明在类内，未初始化时，有默认值。integer 和 char 类型默认为 0 ，boolean 默认为 false，对象引用默认为 null。null 表示没有操作对象的远程控制，他是个引用而不是对象。</p>
+<p>局部变量声明在方法内，未初始化时，没有默认值。方法的参数也是局部变量。如果局部变量未初始化就使用，编译器会报错。</p>
+<h3 id="random-方法产生随机数"><a href="#random-方法产生随机数" class="headerlink" title="random() 方法产生随机数"></a>random() 方法产生随机数</h3><p>产生 [n,m] 之间的随机数：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> x = (<span class="keyword">int</span>)( Math.random() * (m-n+<span class="number">1</span>) );</div></pre></td></tr></table></figure>
+<p>Math.random() 方法返回介于 0 与 1 之间的 double 值，然后将此值乘以数组元素个数，再取整数值。</p>
+<p>random() Returns:</p>
+<p>a pseudorandom <code>double</code> greater than or equal to <code>0.0</code> and less than <code>1.0</code>.</p>
+<p>大于等于 0 ，小于 1.</p>
+<h3 id="写伪代码参考"><a href="#写伪代码参考" class="headerlink" title="写伪代码参考"></a>写伪代码参考</h3><p>Chapter 5  Page 100</p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/mz9c7e" alt=""></p>
+<h3 id="类、方法、变量的命名规则"><a href="#类、方法、变量的命名规则" class="headerlink" title="类、方法、变量的命名规则"></a>类、方法、变量的命名规则</h3><ol>
+<li>必须以字母，下划线，或 $ 开头</li>
+<li>除第一个字符外，后面可以用数字</li>
+<li>避开 Java 的关键字</li>
+</ol>
+<h3 id="变量的两种口味"><a href="#变量的两种口味" class="headerlink" title="变量的两种口味"></a>变量的两种口味</h3><ol>
+<li>香辣的对象引用：保存的是对象的引用，以字节来表示取得对象的方法（遥控器）。</li>
+<li>清凉的 primitive 主数据类型：保存的是变量本身，以字节代表实际的变量值，有 boolean、char、byte、short、int、long、float、double 8种。</li>
+</ol>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/zJv58u" alt=""></p>
+<p>注意，数组不论被声明来承载的是 primitive 主数据类型，或对象引用，数组永远是对象。</p>
+<h3 id="Java-是个强类型语言"><a href="#Java-是个强类型语言" class="headerlink" title="Java 是个强类型语言"></a>Java 是个强类型语言</h3><p>类型不许乱用，可以被隐含的放大（小值放大容器），或明确的缩小（强制类型转换）</p>
 
       
     </div>
@@ -572,8 +655,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           
             <img class="site-author-image" itemprop="image"
@@ -659,6 +751,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-的垃圾回收"><span class="nav-number">1.</span> <span class="nav-text">Java  的垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建内存示意图"><span class="nav-number">2.</span> <span class="nav-text">对象的创建内存示意图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-First-Java-基础知识附录"><span class="nav-number">3.</span> <span class="nav-text">Head First Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得命令行用户输入字符串的方法"><span class="nav-number">3.1.</span> <span class="nav-text">取得命令行用户输入字符串的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-与-for"><span class="nav-number">3.2.</span> <span class="nav-text">foreach 与 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-转-int"><span class="nav-number">3.3.</span> <span class="nav-text">String 转 int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-传参数是值拷贝"><span class="nav-number">3.4.</span> <span class="nav-text">Java 传参数是值拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的比较"><span class="nav-number">3.5.</span> <span class="nav-text">变量的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例变量-VS-局部变量"><span class="nav-number">3.6.</span> <span class="nav-text">实例变量 VS 局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-方法产生随机数"><span class="nav-number">3.7.</span> <span class="nav-text">random() 方法产生随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写伪代码参考"><span class="nav-number">3.8.</span> <span class="nav-text">写伪代码参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类、方法、变量的命名规则"><span class="nav-number">3.9.</span> <span class="nav-text">类、方法、变量的命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的两种口味"><span class="nav-number">3.10.</span> <span class="nav-text">变量的两种口味</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-是个强类型语言"><span class="nav-number">3.11.</span> <span class="nav-text">Java 是个强类型语言</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -686,7 +794,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">7.1k字</span>
+    <span title="博客全站共">8.3k字</span>
   
 </div>
 
