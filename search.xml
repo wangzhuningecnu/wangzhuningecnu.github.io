@@ -1,11 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[编程小白的第一本 Python 入门书]]></title>
+    <url>%2F2017%2F11%2F02%2FFirst-Python%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>Python</category>
+        <category>Python 入门</category>
+      </categories>
+      <tags>
+        <tag>Python 入门</tag>
+        <tag>编程小白的第一本 Python 入门书</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Head First Java]]></title>
+    <url>%2F2017%2F11%2F02%2FHead-First-Java%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Java</category>
+        <category>Head First Java</category>
+      </categories>
+      <tags>
+        <tag>Head First Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Android 开发中遇到的 bug]]></title>
     <url>%2F2017%2F10%2F30%2FAndroid-developing-bug%2F</url>
     <content type="text"><![CDATA[NoSuchMethodError: No static method wrapSharedElementTransition上汽大通项目遇到火山级 bug，点击 123456789101112131415java.lang.NoSuchMethodError: No static method wrapSharedElementTransition(Ljava/lang/Object;)Ljava/lang/Object; in class Landroid/support/v4/app/FragmentTransitionCompat21; or its super classes (declaration of 'android.support.v4.app.FragmentTransitionCompat21' appears in /data/app/com.example.aidrive2-1/base.apk) at android.support.v4.app.BackStackRecord.getSharedElementTransition(BackStackRecord.java:1156) at android.support.v4.app.BackStackRecord.configureTransitions(BackStackRecord.java:1222) at android.support.v4.app.BackStackRecord.beginTransition(BackStackRecord.java:1112) at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:721) at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1677) at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:536) at android.os.Handler.handleCallback(Handler.java:815) at android.os.Handler.dispatchMessage(Handler.java:104) at android.os.Looper.loop(Looper.java:194) at android.app.ActivityThread.main(ActivityThread.java:5556) at java.lang.reflect.Method.invoke(Native Method) at java.lang.reflect.Method.invoke(Method.java:372) at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:967) at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:762) app:dexDebug：/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java’’ finished with non-zero exit value 21Error:Execution failed for task ':app:dexDebug'. &gt; com.android.ide.common.process.ProcessException: org.gradle.process.internal.ExecException: Process 'command '/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/bin/java'' finished with non-zero exit value 2 是 app/build.gradle 依赖包的版本问题， 参考： https://stackoverflow.com/questions/30001051/appdexdebug-execexception-finished-with-non-zero-exit-value-2 http://www.cnblogs.com/creasylai19/p/5027757.html 状态：未解决]]></content>
       <categories>
         <category>Android</category>
+        <category>Android Developing Bug</category>
       </categories>
       <tags>
         <tag>Android</tag>
@@ -18,6 +44,7 @@
     <content type="text"><![CDATA[彩虹无线发布“立方体计划”：前装车联网大数据的两种玩法]]></content>
       <categories>
         <category>毕设论文</category>
+        <category>材料收集</category>
       </categories>
   </entry>
   <entry>
@@ -26,6 +53,7 @@
     <content type="text"><![CDATA[给高级 Android 工程师的进阶手册第一讲，讲 UI 一般使用 自带控件 + 开源库，可以实现大部分 UI 效果。但一些新颖的效果，要自定义 View 来实现。 自定义 View 的 3 个关键点： 布局 绘制 触摸反馈 听课： 录播的视频 + 文字 + 练习项目。视频负责打通概念，文字负责阐述细节，练习项目负责最后一公里，让你从「我懂了」变成「我会了」 自定义 View 1-1 绘制基础绘制就是控件内容的显示。 自定义绘制就是你来接管绘制的过程，操作绘制细节。使用系统 API 是绘制不出柱状图和饼形图的，即使绘制出来，性能也不佳，这时要使用自定义绘制 View。]]></content>
       <categories>
         <category>Android</category>
+        <category>Hencoder 朱凯的高级教程</category>
       </categories>
       <tags>
         <tag>Android</tag>
@@ -49,6 +77,7 @@
     <url>%2F2017%2F10%2F26%2FPronunciation-of-Miss-Ji%2F</url>
     <content type="text"><![CDATA[视频地址纪老师英语 - 音标篇 纪老师 英语音标口诀记忆法 – 音标一 5 个元音 + 1 个辅音 纪老师 英语音标口诀记忆法 – 音标二 5 个辅音的发音方法 纪老师 英语音标口诀记忆法 – 音标三 8 个双元音的发音方法 纪老师 英语音标口诀记忆法 – 音标四 12 个辅音的发音方法 纪老师 英语音标口诀记忆法 – 音标五 p、k、t 清音浊化 纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 1 - 6 句 纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 32 句 纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 71 - 79 句 纪老师 英语音标口诀记忆法 – 音标实战篇 英语习惯用语发音练习 108 - 135 句 纪老师 - 48个国际音标的记忆口诀讲义地址纪老师 - 48个国际音标的记忆口诀【讲义】 音标一元音：20 个，相当于韵母 辅音：28 个，相当于声母 第一节学习 5 个元音和 1 个辅音： 发言口诀： 音标二第二节学习 5 个辅音 f、l、m、n 的发音：一种是读汉语拼音里的flmn，另一种是读这四个英文字母发音的尾音。 后面有可以一起拼读的就发flmn的音，没有一起拼读的音就发英文字母的尾音。 r 后面有可以一起拼读的音就发 ru 音，没有一起拼读的音就发 “儿”化音。 音标三第三节学习 8 个双元音。 英语讲究「滑音」。双元音的读法是从第一个音向后面一个滑动。 新旧音标对比如下： 音标四12 个辅音的发音方法 噘嘴的 s，发汉语拼音的平舌 s 噘嘴的 z，发汉语拼音的平舌 z 噘嘴的 s，发汉语拼音中的咬舌 s 咬舌尖的 r，发汉语拼音中的 r 噘嘴的 ch，发汉语拼音的翘舌 ch 噘嘴的 zh，发汉语拼音的翘舌 zh 噘嘴的 chu，发汉语拼音的翘舌 chu 噘嘴的 zhu，发汉语拼音的翘舌 zhu chi，发音在 c 与 ch 之间，我觉得是 ci zhi，发音在 z 与 zh 之间，我觉得是 zi y，发汉语拼音 yi 不能噘嘴的 wu，上牙轻抚下唇。 音标五清音浊化问题，也叫音变。 p k t 胆子小，见到 s 须变音。 p 变 b，k 变 g，t 要变成 d。 英语音标中一共有 48 个音素，讲了 31 个特殊的音素，剩下 17 个音素与汉语拼音发音相似。 如 p，读短促的 p，k，读短促的 k。]]></content>
       <categories>
+        <category>英语</category>
         <category>音标</category>
       </categories>
       <tags>
@@ -90,8 +119,8 @@
         <category>第一行代码</category>
       </categories>
       <tags>
-        <tag>任务清单</tag>
         <tag>第一行代码</tag>
+        <tag>任务清单</tag>
       </tags>
   </entry>
   <entry>
@@ -113,9 +142,10 @@
     <content type="text"><![CDATA[引用数组的赋值问题元素对象为 Student 类，数组元素对象为什么不能这样声明： 123Student[] arrStudent = new Student[]&#123;&#123;"D",90&#125; , &#123;"C",100&#125; , &#123;"B",95&#125; , &#123;"A",95&#125;&#125;;Student[] arrStudent = new Student[]()&#123;&#123;"D",90&#125; , &#123;"C",100&#125; , &#123;"B",95&#125; , &#123;"A",95&#125;&#125;; Integer 的包装类就可以这样声明： 1234567891011121314151617181920212223//测试 IntegerInteger arrInteger[] = &#123;10,8,9,7,4,6,5,3,2,1&#125;;SelectionSort.selectionSort(arrInteger);for (Integer i : arrInteger )&#123; System.out.print(i + " ");&#125;System.out.println();//测试 DoubleDouble arrDouble[] = &#123;4.3,4.2,3.3,2.1,1.0&#125;;SelectionSort.selectionSort(arrDouble);for (Double double1 : arrDouble) &#123; System.out.print(double1 + " ");&#125;System.out.println();//测试 StringString[] arrString = &#123;"D","C","B","A"&#125;;SelectionSort.selectionSort(arrString);for (String string : arrString) &#123; System.out.print(string+" ");&#125;System.out.println(); 引用类型的数组不可以在声明时赋值吗？ 引用类型数组怎么定义的？ assert 是保证什么的东东，不是类，也不是静态方法，那应该是Object里的,但是没有1assert randomLeft &lt;= randomRight; 这句能保证的是，randomLeft 的值 如果大于 randomRight 的值，则会把他们两个调换。不会报 true 或 false ，也不会报错，程序还是能运行。 泛型泛型啊Foreach 用法注意若是给数组赋值，则不能用 Foreach ，因为 foreach 只是把值拷贝给一个临时变量，并不会赋值给数组本身。 错误示例： 123for (Integer integer : arr) &#123; integer = new Integer((int)(Math.random()*(randomRight-randomLeft+1)+randomLeft)); &#125; 确实生成了随机数给 integer,但并没有给数组。 Java的反射机制]]></content>
       <categories>
         <category>Java</category>
+        <category>Java 问题贴</category>
       </categories>
       <tags>
-        <tag>Java问题贴</tag>
+        <tag>Java 问题贴</tag>
       </tags>
   </entry>
   <entry>
@@ -149,6 +179,7 @@
     <content type="text"><![CDATA[摘自： stormzhang 的博客：每个人都需要的中文排版指南 空格 中英文之间需要加空格 eg. 大家可以搜索公众号 AndroidDeveloper 或者 googdev 关注我。 中文与数字之间需要加空格 eg. 不知不觉，我都快 30 岁了。 数字与单位之间需要加空格 eg. 我有一块 20 TB 的硬盘，鬼知道我是怎么用完的。 完整的英文整句时标点与单词之间需要加空格 eg. Stay hungry, stay foolish. 但是也有一些例外。 度的标志、百分号不加空格 eg. 今天气温有 30° 的高温。 eg. 据统计，关注公众号 AndroidDeveloper 的读者中有 80% 是长得好看的。 全角标点与其他字符之间不加空格 eg. 大家好，我是 stormzhang，请多多关照。 标点全角和半角是英文和中文的编码规范不同遗留下的问题，简单来说，全角占两个字节，半角占一个字节，你可以理解成中文汉字是全角，英文字母是半角，不过半角全角主要是针对标点符号来说的，中文标点占两个字节，英文标点占一个字节。体现在排版上的差异就是，全角字符屏幕打印宽度是两个，而半角字符屏幕打印宽度是一个，如中文逗号和英文逗号他们的显示分别是「，」和「,」。 使用全角中文标点 中文排版中所有的标点都应该使用中文全角中文标点 eg. 大家好，我是 stormzhang。 遇到英文整句、特殊名词时使用半角标点。 eg. 乔布斯说过：「Stay hungry, stay foolish.」 eg. Facebook, Inc. 使用直角引号 我国国家标准要求弯引号，但是个人建议在新媒体排版时使用直角引号。 eg. 你竟然不知道「帅比张」？ 如果引号再使用引号使用直角双引号。 eg. 我质问他，「你难道忘记『帅比张』了么？」 其他除以上之外，还有一些其他标准推荐大家使用的。 英文名词首字母尽量大写 eg. Google、Android、Facebook 专有名词使用正确的大小写 eg. GitHub、iOS、iPhone 6s、MacBook Pro 首行不要缩进 大家一般都采用「空出一行」进行自然段与自然段之间的区分，这种写作方式非常省事，而且很整齐。 ​]]></content>
       <categories>
         <category>stormzhang</category>
+        <category>Blog 书写规范</category>
       </categories>
       <tags>
         <tag>stormzhang</tag>
@@ -164,9 +195,9 @@
         <category>书单</category>
       </categories>
       <tags>
-        <tag>书单</tag>
         <tag>任务清单</tag>
         <tag>Head First Java</tag>
+        <tag>书单</tag>
         <tag>Effective Java</tag>
         <tag>Thinking in Java</tag>
         <tag>Android 第一行代码</tag>
