@@ -95,7 +95,10 @@
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/H8Ym1i">
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/mz9c7e">
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/zJv58u">
-<meta property="og:updated_time" content="2017-11-02T09:56:02.000Z">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/93zI2w">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/h4f7Lr">
+<meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/qnBqcw">
+<meta property="og:updated_time" content="2017-11-07T12:47:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First Java">
 <meta name="twitter:description" content="Java  的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。     Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181">
@@ -415,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,201
+                  1,664
                 </span>
               
 
@@ -431,7 +434,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             </div>
@@ -499,12 +502,12 @@
 <p><img src="https://cdn-std.dprcdn.net/files/acc_587316/H8Ym1i" alt=""></p>
 <h3 id="变量的比较"><a href="#变量的比较" class="headerlink" title="变量的比较"></a>变量的比较</h3><ol>
 <li>== ：用来比较两个变量的字节组合是否相等，对于 primitive 主数据类型来说，字节组合就是实际的变量值，对于引用来说，字节组合是取得对象的方法（指针），== 就是判断两个引用是否指向同一个对象。</li>
-<li>equals（）用来判断两个对象是否在意义上相等。即对象的相等性。</li>
+<li>equals（）：用来判断两个对象是否在意义上相等。即对象的相等性。</li>
 </ol>
 <h3 id="实例变量-VS-局部变量"><a href="#实例变量-VS-局部变量" class="headerlink" title="实例变量 VS 局部变量"></a>实例变量 VS 局部变量</h3><p>实例变量声明在类内，未初始化时，有默认值。integer 和 char 类型默认为 0 ，boolean 默认为 false，对象引用默认为 null。null 表示没有操作对象的远程控制，他是个引用而不是对象。</p>
 <p>局部变量声明在方法内，未初始化时，没有默认值。方法的参数也是局部变量。如果局部变量未初始化就使用，编译器会报错。</p>
 <h3 id="random-方法产生随机数"><a href="#random-方法产生随机数" class="headerlink" title="random() 方法产生随机数"></a>random() 方法产生随机数</h3><p>产生 [n,m] 之间的随机数：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> x = (<span class="keyword">int</span>)( Math.random() * (m-n+<span class="number">1</span>) );</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> x = (<span class="keyword">int</span>)( Math.random() * (m-n+<span class="number">1</span>) + n );</div></pre></td></tr></table></figure>
 <p>Math.random() 方法返回介于 0 与 1 之间的 double 值，然后将此值乘以数组元素个数，再取整数值。</p>
 <p>random() Returns:</p>
 <p>a pseudorandom <code>double</code> greater than or equal to <code>0.0</code> and less than <code>1.0</code>.</p>
@@ -523,6 +526,43 @@
 <p><img src="https://cdn-std.dprcdn.net/files/acc_587316/zJv58u" alt=""></p>
 <p>注意，数组不论被声明来承载的是 primitive 主数据类型，或对象引用，数组永远是对象。</p>
 <h3 id="Java-是个强类型语言"><a href="#Java-是个强类型语言" class="headerlink" title="Java 是个强类型语言"></a>Java 是个强类型语言</h3><p>类型不许乱用，可以被隐含的放大（小值放大容器），或明确的缩小（强制类型转换）</p>
+<h3 id="Java-API"><a href="#Java-API" class="headerlink" title="Java API"></a>Java API</h3><p>Java 中内置了数百个类，被称为 API，其实他就是个函数库，你可以把他当做自己写的来用。ArrayList 类就是 Java 函数库里的一个。</p>
+<p>使用函数库时，要在使用到该类时写出完整的类名，或是在源文件开头 import 进它的包名，除非是来源于 java.lang 这个包中，java.lang 是个预先被引用的包，是个经常会用到的基础包。</p>
+<p>类用包来组织，但 import 绝不是 C 里的 include，import 只是会帮你省下每个类前面的包名称，程序并不会因为 import 而变大或变慢。</p>
+<p>以 javax 开头的包以前曾经是扩展，后来才取得了标准的名份。</p>
+<h3 id="ArrayList-类"><a href="#ArrayList-类" class="headerlink" title="ArrayList 类"></a>ArrayList 类</h3><p>ArrayList 类是 java.util 工具类的代表。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ArrayList&lt;Egg&gt; myList = <span class="keyword">new</span> ArrayList&lt;Egg&gt;();</div><div class="line"></div><div class="line"><span class="comment">//虽然 ArrayList 里返回的是 Object，但编译器会帮你做类型转换，转成 Egg 类型</span></div></pre></td></tr></table></figure>
+<p>新的 ArrayList 对象虽然和数组一样会创建在堆上，但他们有本质的不同</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">ArrayList</th>
+<th style="text-align:center">数组</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">使用 ArrayList，只是运用 ArrayList 类型的对象，跟使用其他对象一样，用 “.” 运算符调用它的方法。</td>
+<td style="text-align:center">使用数组，要用特殊的数组语法 []，无法调用它的方法，最多只能存取它的 length 实例变量。</td>
+</tr>
+<tr>
+<td style="text-align:center">ArrayList 会自动管理大小</td>
+<td style="text-align:center">数组要定义它的大小，且大小不能改变</td>
+</tr>
+<tr>
+<td style="text-align:center">ArrayList 只能携带对象，不能装 primitive 主数据类型，但是非要装的话，编译器会自动将 primitive 包装成 Object ，再放入 ArrayList 中</td>
+<td style="text-align:center">在装载 primitive 主数据类型时，数组比 ArrayList 快</td>
+</tr>
+<tr>
+<td style="text-align:center"><string> 是类型参数，代表是 String 的集合</string></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/93zI2w" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/h4f7Lr" alt=""></p>
+<p><img src="https://cdn-std.dprcdn.net/files/acc_587316/qnBqcw" alt=""></p>
+<h3 id="短运算的使用"><a href="#短运算的使用" class="headerlink" title="短运算的使用"></a>短运算的使用</h3><p>可以用这种方式避免调用内容为 null 的指针变量：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>( refVar ! = <span class="keyword">null</span> &amp;&amp; refVar.isValidType())&#123;</div><div class="line">  <span class="comment">//执行有效变量的工作</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -683,7 +723,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">18</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -694,7 +734,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-count">26</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -760,7 +800,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-的垃圾回收"><span class="nav-number">1.</span> <span class="nav-text">Java  的垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建内存示意图"><span class="nav-number">2.</span> <span class="nav-text">对象的创建内存示意图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-First-Java-基础知识附录"><span class="nav-number">3.</span> <span class="nav-text">Head First Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得命令行用户输入字符串的方法"><span class="nav-number">3.1.</span> <span class="nav-text">取得命令行用户输入字符串的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-与-for"><span class="nav-number">3.2.</span> <span class="nav-text">foreach 与 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-转-int"><span class="nav-number">3.3.</span> <span class="nav-text">String 转 int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-传参数是值拷贝"><span class="nav-number">3.4.</span> <span class="nav-text">Java 传参数是值拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的比较"><span class="nav-number">3.5.</span> <span class="nav-text">变量的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例变量-VS-局部变量"><span class="nav-number">3.6.</span> <span class="nav-text">实例变量 VS 局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-方法产生随机数"><span class="nav-number">3.7.</span> <span class="nav-text">random() 方法产生随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写伪代码参考"><span class="nav-number">3.8.</span> <span class="nav-text">写伪代码参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类、方法、变量的命名规则"><span class="nav-number">3.9.</span> <span class="nav-text">类、方法、变量的命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的两种口味"><span class="nav-number">3.10.</span> <span class="nav-text">变量的两种口味</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-是个强类型语言"><span class="nav-number">3.11.</span> <span class="nav-text">Java 是个强类型语言</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-的垃圾回收"><span class="nav-number">1.</span> <span class="nav-text">Java  的垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建内存示意图"><span class="nav-number">2.</span> <span class="nav-text">对象的创建内存示意图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-First-Java-基础知识附录"><span class="nav-number">3.</span> <span class="nav-text">Head First Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得命令行用户输入字符串的方法"><span class="nav-number">3.1.</span> <span class="nav-text">取得命令行用户输入字符串的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-与-for"><span class="nav-number">3.2.</span> <span class="nav-text">foreach 与 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-转-int"><span class="nav-number">3.3.</span> <span class="nav-text">String 转 int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-传参数是值拷贝"><span class="nav-number">3.4.</span> <span class="nav-text">Java 传参数是值拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的比较"><span class="nav-number">3.5.</span> <span class="nav-text">变量的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例变量-VS-局部变量"><span class="nav-number">3.6.</span> <span class="nav-text">实例变量 VS 局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-方法产生随机数"><span class="nav-number">3.7.</span> <span class="nav-text">random() 方法产生随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写伪代码参考"><span class="nav-number">3.8.</span> <span class="nav-text">写伪代码参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类、方法、变量的命名规则"><span class="nav-number">3.9.</span> <span class="nav-text">类、方法、变量的命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的两种口味"><span class="nav-number">3.10.</span> <span class="nav-text">变量的两种口味</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-是个强类型语言"><span class="nav-number">3.11.</span> <span class="nav-text">Java 是个强类型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-API"><span class="nav-number">3.12.</span> <span class="nav-text">Java API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList-类"><span class="nav-number">3.13.</span> <span class="nav-text">ArrayList 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短运算的使用"><span class="nav-number">3.14.</span> <span class="nav-text">短运算的使用</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -794,7 +834,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">8.3k字</span>
+    <span title="博客全站共">9.3k字</span>
   
 </div>
 
