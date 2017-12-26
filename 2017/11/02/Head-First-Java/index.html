@@ -98,7 +98,7 @@
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/93zI2w">
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/h4f7Lr">
 <meta property="og:image" content="https://cdn-std.dprcdn.net/files/acc_587316/qnBqcw">
-<meta property="og:updated_time" content="2017-11-07T12:47:17.000Z">
+<meta property="og:updated_time" content="2017-12-07T14:31:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Head First Java">
 <meta name="twitter:description" content="Java  的垃圾回收p40 对象的创建内存示意图 对象的引用变量有多大？ 除非你和 JVM 开发团队有交情，不然不知道，在同一个 JVM 中，引用变量的大小是一样的。若你是要讨论内存分配的问题，你要关心的应该是需要建立多少个对象和引用，以及对象的实际大小。     Head First Java 基础知识附录取得命令行用户输入字符串的方法1234567891011121314151617181">
@@ -418,7 +418,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,664
+                  3,517
                 </span>
               
 
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  13
                 </span>
               
             </div>
@@ -485,7 +485,7 @@
 </ol>
 <p>locationCells 的集合必须是数组或其他集合的引用。而且 int 这个位置的类型要与 locationCells 兼容。</p>
 <blockquote>
-<p>注意：可以看出，在 foreach 的执行过程中，采用了数组数据赋值，所以，cell 值的改变并不会影响 原来数组里那个位置的元素值。如果需要改变原来的数组，如排序，就要用之前的 for 循环。</p>
+<p>注意：可以看出，在 foreach 的执行过程中，采用了数组数据赋值，所以，cell 值的改变并不会影响 原来数组里那个位置的元素值。如果需要改变原来的数组，如排序，就要用之前的 for 循环。涉及到「赋值」的操作，都不能用foreach.</p>
 </blockquote>
 <p>原始的 for 循环：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i&lt;<span class="number">0</span> ; i++ ) &#123;···&#125;</div><div class="line">        <span class="number">1</span>        <span class="number">2</span>     <span class="number">3</span>      <span class="number">4</span></div></pre></td></tr></table></figure>
@@ -512,6 +512,8 @@
 <p>random() Returns:</p>
 <p>a pseudorandom <code>double</code> greater than or equal to <code>0.0</code> and less than <code>1.0</code>.</p>
 <p>大于等于 0 ，小于 1.</p>
+<p>产生 [0,n] 之间的随机数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">int</span> x = (<span class="keyword">int</span>)( Math,random() * (n + <span class="number">1</span> ));</div></pre></td></tr></table></figure>
 <h3 id="写伪代码参考"><a href="#写伪代码参考" class="headerlink" title="写伪代码参考"></a>写伪代码参考</h3><p>Chapter 5  Page 100</p>
 <p><img src="https://cdn-std.dprcdn.net/files/acc_587316/mz9c7e" alt=""></p>
 <h3 id="类、方法、变量的命名规则"><a href="#类、方法、变量的命名规则" class="headerlink" title="类、方法、变量的命名规则"></a>类、方法、变量的命名规则</h3><ol>
@@ -563,6 +565,55 @@
 <p><img src="https://cdn-std.dprcdn.net/files/acc_587316/qnBqcw" alt=""></p>
 <h3 id="短运算的使用"><a href="#短运算的使用" class="headerlink" title="短运算的使用"></a>短运算的使用</h3><p>可以用这种方式避免调用内容为 null 的指针变量：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>( refVar ! = <span class="keyword">null</span> &amp;&amp; refVar.isValidType())&#123;</div><div class="line">  <span class="comment">//执行有效变量的工作</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Java-基础知识附录"><a href="#Java-基础知识附录" class="headerlink" title="Java 基础知识附录"></a>Java 基础知识附录</h2><h3 id="赋值数组"><a href="#赋值数组" class="headerlink" title="赋值数组"></a>赋值数组</h3><p>Java 中有复制数组的方法，C++ 中没有</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Integer[] arr1 = SortTestHelper.generateRandomArray(n, <span class="number">0</span>, n);</div><div class="line"></div><div class="line">Integer[] arr2 = Arrays.copyOf(arr1, arr1.length);</div></pre></td></tr></table></figure>
+<h3 id="assert"><a href="#assert" class="headerlink" title="assert"></a>assert</h3><p><strong>一、概述</strong></p>
+<p>在 C 和 C++ 语言中都有 assert 关键，表示断言。</p>
+<p>在 Java 中，同样也有 assert 关键字，表示断言，用法和含义都差不多。</p>
+<p><strong>二、语法</strong></p>
+<p>在 Java 中，assert 关键字是从 JAVA SE 1.4 引入的，为了避免和老版本的 Java 代码中使用了 assert 关键字导致错误，Java 在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都将忽略！），如果要开启断言检查，则需要用开关 -enableassertions 或 -ea 来开启。</p>
+<p>assert关键字语法很简单，有两种用法：</p>
+<ol>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">assert</span> &lt;<span class="keyword">boolean</span>表达式&gt;</div></pre></td></tr></table></figure>
+<p>如果 <boolean表达式> 为 true，则程序继续执行。</boolean表达式></p>
+<p>如果为 false，则程序抛出 AssertionError，并终止执行。</p>
+</li>
+<li><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">assert</span> &lt;<span class="keyword">boolean</span>表达式&gt; : &lt;错误信息表达式&gt;</div></pre></td></tr></table></figure>
+<p>如果 <boolean表达式> 为 true，则程序继续执行。</boolean表达式></p>
+<p>如果为 false，则程序抛出 java.lang.AssertionError，并输入 &lt;错误信息表达式&gt;。</p>
+</li>
+</ol>
+<p><strong>三、应用实例</strong> </p>
+<p>下面给出一个例子，通过例子说明其用法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AssertFoo</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String args[])</span> </span>&#123;</div><div class="line"></div><div class="line">        <span class="comment">//断言1结果为true，则继续往下执行</span></div><div class="line"></div><div class="line">        <span class="keyword">assert</span> <span class="keyword">true</span>;</div><div class="line"></div><div class="line">        System.out.println(<span class="string">"断言1没有问题，Go！"</span>);</div><div class="line"></div><div class="line">        System.out.println(<span class="string">"\n-----------------\n"</span>);</div><div class="line"></div><div class="line">        <span class="comment">//断言2结果为false，程序终止</span></div><div class="line"></div><div class="line">        <span class="keyword">assert</span> <span class="keyword">false</span> : <span class="string">"断言失败，此表达式的信息将会在抛出异常的时候输出！"</span>;</div><div class="line"></div><div class="line">        System.out.println(<span class="string">"断言2没有问题，Go！"</span>);</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>保存代码到 C:\AssertFoo.java，然后按照下面的方式执行，查看控制台输出结果：</p>
+<p><strong>1、编译程序：</strong></p>
+<p>C:>javac AssertFoo.java </p>
+<p><strong>2、默认执行程序，没有开启-ea开关：</strong></p>
+<p>C:>java AssertFoo</p>
+<p>执行结果：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">断言<span class="number">1</span>没有问题，Go！</div><div class="line"> -----------------</div><div class="line">断言<span class="number">2</span>没有问题，Go！</div></pre></td></tr></table></figure>
+<p><strong>3、开启-ea开关，执行程序：</strong></p>
+<p>C:>java -ea AssertFoo</p>
+<p>执行结果：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">断言<span class="number">1</span>没有问题，Go！</div><div class="line">-----------------</div><div class="line">Exception in thread <span class="string">"main"</span> java.lang.AssertionError: 断言失败，此表达式的信息将</div><div class="line">会在抛出异常的时候输出！</div><div class="line">        at AssertFoo.main(AssertFoo.java:<span class="number">10</span>)</div></pre></td></tr></table></figure>
+<p><strong>四、陷阱</strong></p>
+<p>assert 关键字用法简单，但是使用 assert 往往会让你陷入越来越深的陷阱中。应避免使用。笔者经过研究，总结了以下原因：</p>
+<p>1、assert 关键字需要在运行时候显式开启才能生效，否则你的断言就没有任何意义。而现在主流的 Java IDE 工具默认都没有开启 -ea 断言检查功能。这就意味着你如果使用 IDE 工具编码，调试运行时候会有一定的麻烦。并且，对于 Java Web 应用，程序代码都是部署在容器里面，你没法直接去控制程序的运行，如果一定要开启 -ea 的开关，则需要更改 Web 容器的运行配置参数。这对程序的移植和部署都带来很大的不便。</p>
+<p>2、用 assert 代替 if 是陷阱之二。assert 的判断和if语句差不多，但两者的作用有着本质的区别：assert 关键字本意上是为测试调试程序时使用的，但如果不小心用 assert 来控制了程序的业务流程，那在测试调试结束后去掉assert 关键字就意味着修改了程序的正常的逻辑。 </p>
+<p>3、assert 断言失败将面临程序的退出。这在一个生产环境下的应用是绝不能容忍的。一般都是通过异常处理来解决程序中潜在的错误。但是使用断言就很危险，一旦失败系统就挂了。</p>
+<p><strong>五、对assert的思考</strong></p>
+<p>assert 既然是为了调试测试程序用，不在正式生产环境下用，那应该考虑更好的测试 JUint 来代替其做用，JUint 相对 assert 关键的所提供的功能是有过之而无不及。当然完全可以通过 IDE debug 来进行调试测试。在此看来，assert 的前途一片昏暗。</p>
+<p>因此，应当避免在 Java 中使用 assert 关键字，除非哪一天 Java 默认支持开启 -ea 的开关，这时候可以考虑。对比一下，assert 能给你带来多少好处，多少麻烦，这是我们选择是否使用的的原则。</p>
+<p><strong>评论：</strong></p>
+<p>assert 有很大的用处<br>首先可以用在单元测试代码中。junit 侵入性是很强的，如果整个工程大量的代码都使用了 junit，就难以去掉或者是选择另外一个框架。如果单元测试代码很多，并且想复用这些单元测试案例，应该选择 assert 而不是 junit，便于使用别的单元测试框架，比如 TestNG。同理正式的功能代码根本就不应该出现 Junit，应该使用 assert.</p>
+<p>assert 主要适合在基类，框架类，接口类，核心代码类，工具类中。换言之，当你的代码的调用者是另外一个程序员写得业务代码，或者是另外一个子系统时，就很有必要使用它。比如你做了一个快速排序的算法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;Integer&gt; <span class="title">quickSort</span><span class="params">(List&lt;Integer&gt; list)</span></span>&#123;</div><div class="line"></div><div class="line">  <span class="keyword">assert</span> list != <span class="keyword">null</span>;</div><div class="line"></div><div class="line">  <span class="comment">// 申请临时空间</span></div><div class="line"></div><div class="line">  <span class="comment">//开始排序</span></div><div class="line"></div><div class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> i : list)&#123;</div><div class="line"></div><div class="line">      <span class="comment">//</span></div><div class="line"></div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>这种情况下，如果不检查传入参数的正确性，会抛出一个莫名其妙的空指针错误。你的调用者可能并不清楚你代码的细节，在一个系统的深处调试一个空指针错误是很浪费时间的。就应该直接明确的告诉你的调用者是传入的参数有问题。否则他会怀疑你的代码有 BUG。使用 assert 可以避免两个程序员之间互相指责对方写的代码有问题。</p>
+<p>assert 适用那些你知道具体是什么错误，你和你的调用者已经约定应该由你的调用者去排除或检查的错误。你通过一个断言告诉你的调用者。assert 不适用那些外部系统造成的错误，比如用户输入数据的错误，某个外部文件格式错误。这些错误不是你的调用者而是用户造成的，甚至于不属于异常，因为出现输入错误和文件格式错误是经常的，这些错误应该由业务代码去检查。</p>
+<p>assert 比较适合于被频繁调用的 基类，框架代码，工具类，核心代码，接口代码中，这正是它在运行时被去掉的原因。测试代码应该在测试阶段开启 -ea 参数，便于对系统深处的核心代码做仔细的测试。</p>
+<p>Java 较少使用 assert 的原因是 Java 有很完整的OO体系，强制类型转换出现得较少，所以不需要类似 c 那样需要频繁的检查指针的类型是否正确，指针是否为空。同时 Java 也很少直接管理内存或缓冲区，所以不需要频繁的检查传入的缓冲区是否为空或者是已经越界。</p>
+<p>但使用好 assert 有助于提高框架代码的正确性和减少框架代码的使用者的调试时间。</p>
 
       
     </div>
@@ -723,7 +774,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -734,7 +785,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-count">27</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -800,7 +851,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-的垃圾回收"><span class="nav-number">1.</span> <span class="nav-text">Java  的垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建内存示意图"><span class="nav-number">2.</span> <span class="nav-text">对象的创建内存示意图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-First-Java-基础知识附录"><span class="nav-number">3.</span> <span class="nav-text">Head First Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得命令行用户输入字符串的方法"><span class="nav-number">3.1.</span> <span class="nav-text">取得命令行用户输入字符串的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-与-for"><span class="nav-number">3.2.</span> <span class="nav-text">foreach 与 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-转-int"><span class="nav-number">3.3.</span> <span class="nav-text">String 转 int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-传参数是值拷贝"><span class="nav-number">3.4.</span> <span class="nav-text">Java 传参数是值拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的比较"><span class="nav-number">3.5.</span> <span class="nav-text">变量的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例变量-VS-局部变量"><span class="nav-number">3.6.</span> <span class="nav-text">实例变量 VS 局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-方法产生随机数"><span class="nav-number">3.7.</span> <span class="nav-text">random() 方法产生随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写伪代码参考"><span class="nav-number">3.8.</span> <span class="nav-text">写伪代码参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类、方法、变量的命名规则"><span class="nav-number">3.9.</span> <span class="nav-text">类、方法、变量的命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的两种口味"><span class="nav-number">3.10.</span> <span class="nav-text">变量的两种口味</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-是个强类型语言"><span class="nav-number">3.11.</span> <span class="nav-text">Java 是个强类型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-API"><span class="nav-number">3.12.</span> <span class="nav-text">Java API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList-类"><span class="nav-number">3.13.</span> <span class="nav-text">ArrayList 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短运算的使用"><span class="nav-number">3.14.</span> <span class="nav-text">短运算的使用</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-的垃圾回收"><span class="nav-number">1.</span> <span class="nav-text">Java  的垃圾回收</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的创建内存示意图"><span class="nav-number">2.</span> <span class="nav-text">对象的创建内存示意图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Head-First-Java-基础知识附录"><span class="nav-number">3.</span> <span class="nav-text">Head First Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#取得命令行用户输入字符串的方法"><span class="nav-number">3.1.</span> <span class="nav-text">取得命令行用户输入字符串的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#foreach-与-for"><span class="nav-number">3.2.</span> <span class="nav-text">foreach 与 for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-转-int"><span class="nav-number">3.3.</span> <span class="nav-text">String 转 int</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-传参数是值拷贝"><span class="nav-number">3.4.</span> <span class="nav-text">Java 传参数是值拷贝</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的比较"><span class="nav-number">3.5.</span> <span class="nav-text">变量的比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例变量-VS-局部变量"><span class="nav-number">3.6.</span> <span class="nav-text">实例变量 VS 局部变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-方法产生随机数"><span class="nav-number">3.7.</span> <span class="nav-text">random() 方法产生随机数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写伪代码参考"><span class="nav-number">3.8.</span> <span class="nav-text">写伪代码参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类、方法、变量的命名规则"><span class="nav-number">3.9.</span> <span class="nav-text">类、方法、变量的命名规则</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变量的两种口味"><span class="nav-number">3.10.</span> <span class="nav-text">变量的两种口味</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-是个强类型语言"><span class="nav-number">3.11.</span> <span class="nav-text">Java 是个强类型语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Java-API"><span class="nav-number">3.12.</span> <span class="nav-text">Java API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ArrayList-类"><span class="nav-number">3.13.</span> <span class="nav-text">ArrayList 类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#短运算的使用"><span class="nav-number">3.14.</span> <span class="nav-text">短运算的使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-基础知识附录"><span class="nav-number">4.</span> <span class="nav-text">Java 基础知识附录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#赋值数组"><span class="nav-number">4.1.</span> <span class="nav-text">赋值数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#assert"><span class="nav-number">4.2.</span> <span class="nav-text">assert</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -834,7 +885,7 @@
     
       <span class="post-meta-item-text">博客全站共&#58;</span>
     
-    <span title="博客全站共">9.3k字</span>
+    <span title="博客全站共">18.8k字</span>
   
 </div>
 

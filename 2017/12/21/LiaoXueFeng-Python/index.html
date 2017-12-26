@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="google98a5a3f1a2769120.html" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="原文地址：中文，免费，零起点，完整示例，基于最新的Python 3版本。  from：马超  廖雪峰的 Python 教程，不懂得地方再查资料去补充。 找一个实际的项目去练手。写一个爬虫项目。 找到一个已经会 Python 的司机。让他给你指出一条路子，同时在遇到卡壳的地方就找他指点。 要学会看别人代码，查看官方文档。 其实只要你想学习，什么时候开始都不晚，不要担心这担心那，你只需要努力，剩下">
+<meta property="og:type" content="article">
+<meta property="og:title" content="廖雪峰Python基础">
+<meta property="og:url" content="http://yoursite.com/2017/12/21/LiaoXueFeng-Python/index.html">
+<meta property="og:site_name" content="年轻人不要老熬夜">
+<meta property="og:description" content="原文地址：中文，免费，零起点，完整示例，基于最新的Python 3版本。  from：马超  廖雪峰的 Python 教程，不懂得地方再查资料去补充。 找一个实际的项目去练手。写一个爬虫项目。 找到一个已经会 Python 的司机。让他给你指出一条路子，同时在遇到卡壳的地方就找他指点。 要学会看别人代码，查看官方文档。 其实只要你想学习，什么时候开始都不晚，不要担心这担心那，你只需要努力，剩下">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://cdn.liaoxuefeng.com/cdn/files/attachments/00138595453161126cc9f11f1d441b0934661239528fa55000/0">
+<meta property="og:image" content="https://cdn.liaoxuefeng.com/cdn/files/attachments/001431643506965540b8016b45c4d27b84c734543f78840000/l">
+<meta property="og:updated_time" content="2017-12-26T15:47:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="廖雪峰Python基础">
+<meta name="twitter:description" content="原文地址：中文，免费，零起点，完整示例，基于最新的Python 3版本。  from：马超  廖雪峰的 Python 教程，不懂得地方再查资料去补充。 找一个实际的项目去练手。写一个爬虫项目。 找到一个已经会 Python 的司机。让他给你指出一条路子，同时在遇到卡壳的地方就找他指点。 要学会看别人代码，查看官方文档。 其实只要你想学习，什么时候开始都不晚，不要担心这担心那，你只需要努力，剩下">
+<meta name="twitter:image" content="https://cdn.liaoxuefeng.com/cdn/files/attachments/00138595453161126cc9f11f1d441b0934661239528fa55000/0">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/12/21/LiaoXueFeng-Python/"/>
+
+
+
+
+
+  <title>廖雪峰Python基础 | 年轻人不要老熬夜</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e12c5d27f0c4173c8fa46923f0399e7a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">年轻人不要老熬夜</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/21/LiaoXueFeng-Python/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wangzhuning">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headimage.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="年轻人不要老熬夜">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">廖雪峰Python基础</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-21T23:37:56+08:00">
+                2017-12-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>人阅读
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,934
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  11
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <a id="more"></a>
+<blockquote>
+<p>原文地址：<a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000" target="_blank" rel="external">中文，免费，零起点，完整示例，基于最新的Python 3版本。</a></p>
+</blockquote>
+<p>from：<a href="https://mp.weixin.qq.com/s?__biz=MzU3ODAxNDcwNQ==&amp;mid=2247484089&amp;idx=1&amp;sn=67c1a5c35a5e63dfb3c89899154993e8&amp;chksm=fd7a9e27ca0d1731c4e95b48db4344d116830324aa6dd01f7ad256c21c1e1525c55593ba8fd6&amp;scene=38#wechat_redirect" target="_blank" rel="external">马超</a></p>
+<ol>
+<li>廖雪峰的 Python 教程，不懂得地方再查资料去补充。</li>
+<li>找一个实际的项目去练手。写一个爬虫项目。</li>
+<li>找到一个已经会 Python 的司机。让他给你指出一条路子，同时在遇到卡壳的地方就找他指点。</li>
+<li>要学会看别人代码，查看官方文档。</li>
+<li>其实只要你想学习，什么时候开始都不晚，不要担心这担心那，你只需要努力，剩下的交给时间，而你之所以没有变强，只因你还不够努力，要记得付出不亚于任何人的努力。</li>
+</ol>
+<h2 id="Python-简介"><a href="#Python-简介" class="headerlink" title="Python 简介"></a>Python 简介</h2><p>用Python可以做什么？可以做日常任务，比如自动备份你的MP3；可以做网站，很多著名的网站包括YouTube就是Python写的；可以做网络游戏的后台，很多在线游戏的后台都是Python开发的。总之就是能干很多很多事啦。</p>
+<p>Python不能写操作系统，这个只能用C语言写；不能写手机应用，只能用Swift/Objective-C（针对iPhone）和Java（针对Android）；不能写3D游戏，最好用C或C++。</p>
+<p>Python是著名的“龟叔”Guido van Rossum在1989年圣诞节期间，为了打发无聊的圣诞节而编写的一个编程语言。</p>
+<p>最近10年最常用的10种编程语言的变化图（TIOBE排行榜）：</p>
+<p><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/00138595453161126cc9f11f1d441b0934661239528fa55000/0" alt="tpci_trends"></p>
+<p>总的来说，这几种编程语言各有千秋。C语言是可以用来编写操作系统的贴近硬件的语言，所以，C语言适合开发那些追求运行速度、充分发挥硬件性能的程序。<strong>而Python是用来编写应用程序的高级编程语言</strong>。</p>
+<p>高级编程语言通常都会提供一个比较完善的基础代码库，让你能直接调用，比如，针对电子邮件协议的SMTP库，针对桌面环境的GUI库，在这些已有的代码库的基础上开发，一个电子邮件客户端几天就能开发出来。</p>
+<p>Python就为我们提供了非常完善的基础代码库，覆盖了网络、文件、GUI、数据库、文本等大量内容，被形象地称作“内置电池（batteries included）”。用Python开发，许多功能不必从零编写，直接使用现成的即可。</p>
+<p>除了内置的库外，Python还有大量的第三方库，也就是别人开发的，供你直接使用的东西。当然，如果你开发的代码通过很好的封装，也可以作为第三方库给别人使用。</p>
+<p>许多大型网站就是用Python开发的，例如YouTube、<a href="http://instagram.com/" target="_blank" rel="external">Instagram</a>，还有国内的<a href="http://www.douban.com/" target="_blank" rel="external">豆瓣</a>。很多大公司，包括Google、Yahoo等，甚至<a href="http://www.nasa.gov/" target="_blank" rel="external">NASA</a>（美国航空航天局）都大量地使用Python。</p>
+<p>那Python适合开发哪些类型的应用呢？</p>
+<p>首选是网络应用，包括网站、后台服务等等；</p>
+<p>其次是许多日常需要的小工具，包括系统管理员需要的脚本任务等等；</p>
+<p>另外就是把其他语言开发的程序再包装起来，方便使用。</p>
+<p>任何编程语言都有缺点，Python也不例外。优点说过了，那Python有哪些缺点呢？</p>
+<p>第一个缺点就是运行速度慢，和C程序相比非常慢，因为Python是解释型语言，你的代码在执行时会一行一行地翻译成CPU能理解的机器码，这个翻译过程非常耗时，所以很慢。而C程序是运行前直接编译成CPU能执行的机器码，所以非常快。</p>
+<p>第二个缺点就是代码不能加密。<strong>如果要发布你的Python程序，实际上就是发布源代码，这一点跟C语言不同，C语言不用发布源代码，只需要把编译后的机器码（也就是你在Windows上常见的xxx.exe文件）发布出去。要从机器码反推出C代码是不可能的，所以，凡是编译型的语言，都没有这个问题，而解释型的语言，则必须把源码发布出去</strong>。</p>
+<p>这个缺点仅限于你要编写的软件需要卖给别人挣钱的时候。好消息是目前的互联网时代，靠卖软件授权的商业模式越来越少了，靠网站和移动应用卖服务的模式越来越多了，后一种模式不需要把源码给别人。</p>
+<p>当然，Python还有其他若干小缺点，请自行忽略，就不一一列举了。</p>
+<h3 id="安装-Python"><a href="#安装-Python" class="headerlink" title="安装 Python"></a>安装 Python</h3><p>要开始学习Python编程，首先就得把Python安装到你的电脑里。安装后，你会得到Python解释器（就是负责运行Python程序的），一个命令行交互环境，还有一个简单的集成开发环境。</p>
+<p>目前，Python有两个版本，一个是2.x版，一个是3.x版，这两个版本是不兼容的。由于3.x版越来越普及，我们的教程将以最新的Python 3.6版本为基础。请确保你的电脑上安装的Python版本是最新的3.6.x，这样，你才能无痛学习这个教程。</p>
+<h3 id="Python解释器"><a href="#Python解释器" class="headerlink" title="Python解释器"></a>Python解释器</h3><p>当我们编写Python代码时，我们得到的是一个包含Python代码的以<code>.py</code>为扩展名的文本文件。要运行代码，就需要Python解释器去执行<code>.py</code>文件。</p>
+<p>Python的解释器很多，但使用最广泛的还是CPython。如果要和Java或.Net平台交互，最好的办法是通过网络调用来交互，确保各程序之间的独立性，而不是用Jython或IronPython。</p>
+<p>当你在终端或者cmd里输入python3的时候, 就是启动了CPython解释器, 安装了Python会默认带一个IDLE, 该软件就是基于CPython做的一个IDE.</p>
+<p>pycharm是一个IDE，类似Python自带的IDLE、Spyder、Sublime等等，它们都只是编辑器，是用来编写代码的，而CPython、IPython、PyPy等，这些是解释器，是用来执行Python代码的，这两者是不一样的。</p>
+<h3 id="命令行模式和Python交互模式"><a href="#命令行模式和Python交互模式" class="headerlink" title="命令行模式和Python交互模式"></a>命令行模式和Python交互模式</h3><p>命令行模式：</p>
+<p>在Windows开始菜单选择“命令提示符”，就进入到命令行模式，它的提示符类似<code>C:\&gt;</code>，</p>
+<p>在命令行模式下，可以执行<code>python</code>进入Python交互式环境，也可以执行<code>python hello.py</code>运行一个<code>.py</code>文件。</p>
+<p>执行一个<code>.py</code>文件<em>只能</em>在命令行模式执行。</p>
+<p>Python交互模式：</p>
+<p>在命令行模式下敲命令<code>python</code>，就看到类似如下的一堆文本输出，然后就进入到Python交互模式，它的提示符是<code>&gt;&gt;&gt;</code>。</p>
+<p>在Python交互模式下输入<code>exit()</code>并回车，就退出了Python交互模式，并回到命令行模式。</p>
+<p>Python交互模式的代码是输入一行，执行一行，而命令行模式下直接运行<code>.py</code>文件是一次性执行该文件内的所有代码。可见，Python交互模式主要是为了调试Python代码用的，也便于初学者学习，它<em>不是</em>正式运行Python代码的环境！</p>
+<h3 id="使用文本编辑器"><a href="#使用文本编辑器" class="headerlink" title="使用文本编辑器"></a>使用文本编辑器</h3><p>py文件名只能是英文字母、数字和下划线的组合。</p>
+<p>用Python开发程序，完全可以一边在文本编辑器里写代码，一边开一个交互式命令窗口，在写代码的过程中，把部分代码粘到命令行去验证，事半功倍！前提是得有个27’的超大显示器！</p>
+<h3 id="Python代码运行助手"><a href="#Python代码运行助手" class="headerlink" title="Python代码运行助手"></a>Python代码运行助手</h3><p>Python代码运行助手可以让你在线输入Python代码，然后通过本机运行的一个Python脚本来执行代码。原理如下：</p>
+<ul>
+<li><p>在网页输入代码;</p>
+</li>
+<li><p>点击<code>Run</code>按钮，代码被发送到本机正在运行的Python代码运行助手；</p>
+</li>
+<li><p>Python代码运行助手将代码保存为临时文件，然后调用Python解释器执行代码；</p>
+</li>
+<li><p>网页显示代码执行结果。</p>
+<p>下载地址：<a href="https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fpython" target="_blank" rel="external">learning.py</a></p>
+<p>运行：</p>
+<p>在存放<code>learning.py</code>的目录下运行命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Users\michael\Downloads&gt; python3 learning.py</div></pre></td></tr></table></figure>
+<p>如果看到<code>Ready for Python code on port 39093...</code>表示运行成功，不要关闭命令行窗口，最小化放到后台运行即可。</p>
+</li>
+</ul>
+<h3 id="输入和输出"><a href="#输入和输出" class="headerlink" title="输入和输出"></a>输入和输出</h3><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>用<code>print()</code>在括号中加上字符串，就可以向屏幕上输出指定的文字。用<code>print()</code>在括号中加上字符串，就可以向屏幕上输出指定的文字。<code>print()</code>遇到逗号“,”会输出一个空格：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'The quick brown fox'</span>, <span class="string">'jumps over'</span>, <span class="string">'the lazy dog'</span>)</div><div class="line">The quick brown fox jumps over the lazy dog</div></pre></td></tr></table></figure>
+<p><code>print()</code>也可以打印整数，或者计算结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(<span class="string">'100 + 200 ='</span>, <span class="number">100</span> + <span class="number">200</span>)</div><div class="line"><span class="number">100</span> + <span class="number">200</span> = <span class="number">300</span></div></pre></td></tr></table></figure>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>Python提供了一个<code>input()</code>，可以让用户输入字符串，并存放到一个变量里。比如输入用户的名字：输入和输出</p>
+<p>阅读: 920559</p>
+<hr>
+<h3 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h3><p>用<code>print()</code>在括号中加上字符串，就可以向屏幕上输出指定的文字。比如输出<code>&#39;hello, world&#39;</code>，用代码实现如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&apos;hello, world&apos;)</div></pre></td></tr></table></figure>
+<p><code>print()</code>函数也可以接受多个字符串，用逗号“,”隔开，就可以连成一串输出：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&apos;The quick brown fox&apos;, &apos;jumps over&apos;, &apos;the lazy dog&apos;)</div><div class="line">The quick brown fox jumps over the lazy dog</div></pre></td></tr></table></figure>
+<p><code>print()</code>会依次打印每个字符串，遇到逗号“,”会输出一个空格，因此，输出的字符串是这样拼起来的：</p>
+<p><img src="https://cdn.liaoxuefeng.com/cdn/files/attachments/001431643506965540b8016b45c4d27b84c734543f78840000/l" alt="print-explain"></p>
+<p><code>print()</code>也可以打印整数，或者计算结果：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(300)</div><div class="line">300</div><div class="line">&gt;&gt;&gt; print(100 + 200)</div><div class="line">300</div></pre></td></tr></table></figure>
+<p>因此，我们可以把计算<code>100 + 200</code>的结果打印得更漂亮一点：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; print(&apos;100 + 200 =&apos;, 100 + 200)</div><div class="line">100 + 200 = 300</div></pre></td></tr></table></figure>
+<p>注意，对于<code>100 + 200</code>，Python解释器自动计算出结果<code>300</code>，但是，<code>&#39;100 + 200 =&#39;</code>是字符串而非数学公式，Python把它视为字符串，请自行解释上述打印结果。</p>
+<h3 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h3><p>现在，你已经可以用<code>print()</code>输出你想要的结果了。但是，如果要让用户从电脑输入一些字符怎么办？Python提供了一个<code>input()</code>，可以让用户输入字符串，并存放到一个变量里。比如输入用户的名字：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>name = input()</div><div class="line">Michael</div></pre></td></tr></table></figure>
+<p>输入完成后，不会有任何提示，Python交互式命令行又回到<code>&gt;&gt;&gt;</code>状态了。那我们刚才输入的内容到哪去了？答案是存放到<code>name</code>变量里了。可以直接输入<code>name</code>查看变量内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>name</div><div class="line"><span class="string">'Michael'</span></div></pre></td></tr></table></figure>
+<p>要打印出<code>name</code>变量的内容，除了直接写<code>name</code>然后按回车外，还可以用<code>print()</code>函数：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(name)</div><div class="line">Michael</div></pre></td></tr></table></figure>
+<p><code>input()</code>可以让你显示一个字符串来提示用户，于是我们把代码改成：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">name = input(<span class="string">'please enter your name: '</span>)</div><div class="line">print(<span class="string">'hello,'</span>, name)</div></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">C:\Workspace&gt; python hello.py</div><div class="line">please enter your name: Michael</div><div class="line">hello, Michael</div></pre></td></tr></table></figure>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><ol>
+<li>Python 是解释型语言</li>
+<li>pycharm是一个IDE，类似Python自带的IDLE、Spyder、Sublime等等，它们都只是编辑器，是用来编写代码的，而CPython、IPython、PyPy等，这些是解释器，是用来执行Python代码的</li>
+<li>输入是Input，输出是Output，因此，我们把输入输出统称为Input/Output，或者简写为IO。</li>
+<li><code>input()</code>和<code>print()</code>是在命令行下面最基本的输入和输出，但是，用户也可以通过其他更高级的图形界面完成输入和输出，比如，在网页上的一个文本框输入自己的名字，点击“确定”后在网页上看到输出信息。</li>
+<li><code>input()</code>可以让你显示一个字符串来提示用户，name = input(‘please enter your name: ‘)</li>
+<li>print()`会依次打印每个字符串，遇到逗号“,”会输出一个空格，print(‘hello,’, name)</li>
+</ol>
+<h2 id="Python基础"><a href="#Python基础" class="headerlink" title="Python基础"></a>Python基础</h2>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/18/Juejin-Git-renwuxian/" rel="next" title="Git 原理详解及实用指南">
+                <i class="fa fa-chevron-left"></i> Git 原理详解及实用指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <img class="site-author-image" itemprop="image"
+              src="/images/headimage.jpg"
+              alt="wangzhuning" />
+          
+            <p class="site-author-name" itemprop="name">wangzhuning</p>
+            <p class="site-description motion-element" itemprop="description">种一棵树最好的时间是十年前，其次是现在 。</p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">25</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">33</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/wangzhuningecnu" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>GitHub</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:51164500251@stu.ecnu.edu.cn" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/wangzhuning" target="_blank" title="FB Page">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-简介"><span class="nav-number">1.</span> <span class="nav-text">Python 简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-Python"><span class="nav-number">1.1.</span> <span class="nav-text">安装 Python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python解释器"><span class="nav-number">1.2.</span> <span class="nav-text">Python解释器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令行模式和Python交互模式"><span class="nav-number">1.3.</span> <span class="nav-text">命令行模式和Python交互模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用文本编辑器"><span class="nav-number">1.4.</span> <span class="nav-text">使用文本编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Python代码运行助手"><span class="nav-number">1.5.</span> <span class="nav-text">Python代码运行助手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入和输出"><span class="nav-number">1.6.</span> <span class="nav-text">输入和输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#输出"><span class="nav-number">1.6.1.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#输入"><span class="nav-number">1.6.2.</span> <span class="nav-text">输入</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输出-1"><span class="nav-number">1.7.</span> <span class="nav-text">输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#输入-1"><span class="nav-number">1.8.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">1.9.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python基础"><span class="nav-number">2.</span> <span class="nav-text">Python基础</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wangzhuning</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">博客全站共&#58;</span>
+    
+    <span title="博客全站共">18.8k字</span>
+  
+</div>
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访客数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
